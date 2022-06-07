@@ -11,10 +11,19 @@ class Base(models.Model):
         abstract = True
 
 
-class PaginaInicial(Base):
+class ParteInicial(Base):
     tituloInicial = models.CharField('titulo (sessão 1)', max_length=100, blank=True)
     subTituloInicial = models.CharField('SubTítulo', max_length=100, blank=True)
 
+    class Meta:
+        verbose_name = 'ParteInicial'
+        verbose_name_plural = 'PartesIniciais'
+
+        def __str__(self):
+            return self.ParteInicial
+
+
+class BarradeNavegação(Base):
     primeiraOpcao = models.CharField('1º (Barra de navegação)', max_length=100, blank=True)
     segundaOpcao = models.CharField('2º', max_length=100, blank=True)
     terceiraOpcao = models.CharField('3º', max_length=100, blank=True)
@@ -23,15 +32,43 @@ class PaginaInicial(Base):
     sextaOpcao = models.CharField('6º', max_length=100, blank=True)
     ultimoBotao = models.CharField('7º', max_length=100, blank=True)
 
+    class Meta:
+        verbose_name = 'BarradeNavegação'
+        verbose_name_plural = 'BarrasdeNavegações'
+
+        def __str__(self):
+            return self.BarradeNavecacão
+
+
+class SegundaSessão(Base):
     pontosTitulo = models.CharField('Pontos titulo (sessão 2)', max_length=100, blank=True)
     primeiroPonto = models.CharField('Primeiro ponto', max_length=100, blank=True)
     terceiroPonto = models.CharField('Segundo ponto', max_length=100, blank=True)
     quintoPonto = models.CharField('Quinto ponto', max_length=100, blank=True)
     descrisaoPontos = models.CharField('Descrisão dos pontos', max_length=800, blank=True)
 
+    class Meta:
+        verbose_name = 'SegundaSessão'
+        verbose_name_plural = 'SegundaSessão'
+
+        def __str__(self):
+            return self.SegundaSessão
+
+
+class TerceiraSessão(Base):
     primeiroTitulo = models.CharField('Primeiro titulo (sessão 3)', max_length=100, blank=True)
     primeiraDescrisao = models.CharField('Primeira descrisão', max_length=800, blank=True)
     primeiroBotao = models.CharField('Primeiro botão', max_length=80, blank=True)
+
+    class Meta:
+        verbose_name = 'TerceiraSessão'
+        verbose_name_plural = 'TerceiraSessão'
+
+        def __str__(self):
+            return self.TerceiraSessão
+
+
+class QuartaSessão(Base):
     segundoTitulo = models.CharField('Segundo titulo (sessão 4)', max_length=100, blank=True)
     segundaDescrisao = models.CharField('Segunda descrisão', max_length=800, blank=True)
     primeiroTopico = models.CharField('Primeiro tópico', max_length=100, blank=True)
@@ -39,6 +76,15 @@ class PaginaInicial(Base):
     terceiroTopico = models.CharField('Terceiro tópico', max_length=100, blank=True)
     segundoBotao = models.CharField('Segundo botão', max_length=80, blank=True)
 
+    class Meta:
+        verbose_name = 'QuartaSessão'
+        verbose_name_plural = 'QuartaSessão'
+
+        def __str__(self):
+            return self.QuartaSessão
+
+
+class QuintaSessão(Base):
     subtituloSuperior = models.CharField('Subtitulo superior (sessão 5)', max_length=100, blank=True)
     tituloQuintaSessao = models.CharField('Titulo', max_length=100, blank=True)
     descrisaoPrincipal = models.CharField('Descrisão principal', max_length=800, blank=True)
@@ -49,6 +95,15 @@ class PaginaInicial(Base):
     quartaDescrisaoIcone = models.CharField('Descrisão quarto icone', max_length=250, blank=True)
     quintaDescrisaoIcone = models.CharField('Descrisão quinto icone', max_length=250, blank=True)
 
+    class Meta:
+        verbose_name = 'QuintaSessão'
+        verbose_name_plural = 'QuintaSessão'
+
+        def __str__(self):
+            return self.QuintaSessão
+
+
+class SextaSessão(Base):
     tituloPrincipalSextaSessao = models.CharField('Titulo principal (sesssão 6)', max_length=100, blank=True)
     primeiroSubtituloSextaSessao = models.CharField('Primeiro subtitulo', max_length=100, blank=True)
     primeiraDescrisaoSextaSesssao = models.CharField('Primeira descrisão', max_length=400, blank=True)
@@ -60,6 +115,15 @@ class PaginaInicial(Base):
     quartaDescrisaoSextaSesssao = models.CharField('Quarta descrisão', max_length=400, blank=True)
     botaoSextaSessao = models.CharField('Botão', max_length=80, blank=True)
 
+    class Meta:
+        verbose_name = 'SextaSessão'
+        verbose_name_plural = 'SextaSessão'
+
+        def __str__(self):
+            return self.SextaSessão
+
+
+class SetimaSessão(Base):
     subtituloSuperiorSetimaSessao = models.CharField('Subtitulo superior (sessão 7)', max_length=100, blank=True)
     tituloPrincipalSetimaSessao = models.CharField('Titulo principal', max_length=100, blank=True)
     primeiroTituloCardSetimaSessao = models.CharField('Titulo do primeiro card', max_length=100, blank=True)
@@ -69,21 +133,48 @@ class PaginaInicial(Base):
     terceiroTituloCardSetimaSessao = models.CharField('Titulo do terceiro card', max_length=100, blank=True)
     descrisaoterceiroCardSetimaSessao = models.CharField('Descrisao do terceiro card', max_length=200, blank=True)
 
+    class Meta:
+        verbose_name = 'SetimaSessão'
+        verbose_name_plural = 'SetimaSessão'
+
+        def __str__(self):
+            return self.SetimaSessão
+
+
+class OitavaSessão(Base):
     subtituloSuperiorOitavaSessao = models.CharField('Subtitulo superior (sessão 8)', max_length=100, blank=True)
     tituloPrincipalOitavaSessao = models.CharField('Titulo principal', max_length=100, blank=True)
     descrisaoOitavaSessao = models.CharField('Descrisão principal', max_length=800, blank=True)
     botaoOitavaSessao = models.CharField('Botão', max_length=80, blank=True)
 
+    class Meta:
+        verbose_name = 'OitavaSessão'
+        verbose_name_plural = 'OitavaSessão'
+
+        def __str__(self):
+            return self.OitavaSessão
+
+
+class NonaSessão(Base):
     enderecoNonaSessao = models.CharField('Endereço (sessão 9)', max_length=800, blank=True)
     numeroNonaSessao = models.CharField('Numero de contato', max_length=100, blank=True)
     emailNonaSessao = models.CharField('Email', max_length=150, blank=True)
 
+    class Meta:
+        verbose_name = 'NonaSessão'
+        verbose_name_plural = 'NonaSessão'
+
+        def __str__(self):
+            return self.NonaSessão
+
+
+class Rodapé(Base):
     copyrightRodape = models.CharField('Copyright rodapé', max_length=250, blank=True)
     nomeRodape = models.CharField('Nome de quem tem os direitos', max_length=100, blank=True)
 
     class Meta:
-        verbose_name = 'Pagina Inicial'
-        verbose_name_plural = 'Paginas Iniciais'
+        verbose_name = 'Rodapé'
+        verbose_name_plural = 'Rodapé'
 
         def __str__(self):
-            return self.tituloInicial
+            return self.Rodapé

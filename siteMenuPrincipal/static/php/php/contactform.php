@@ -6,7 +6,7 @@ error_reporting(0);
   
  // configuration
  
-$email_it_to = "your_own_email_address@some_domain.com";
+$email_it_to = "rodrigo.kojack@gmail.com";
 
 $error_message = "Please complete the form first";
 

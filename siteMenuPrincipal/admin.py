@@ -1,38 +1,75 @@
 # Register your models here.
 from django.contrib import admin
 
-from siteMenuPrincipal.models import PaginaInicial
+from siteMenuPrincipal.models import ParteInicial, BarradeNavegação, SegundaSessão, TerceiraSessão, QuartaSessão, \
+    QuintaSessão, SextaSessão, SetimaSessão, OitavaSessão, NonaSessão, Rodapé
 
 
-@admin.register(PaginaInicial)
-class PaginaInicial(admin.ModelAdmin):
-    list_display = ('tituloInicial', 'subTituloInicial',
+@admin.register(ParteInicial)
+class ParteInicial(admin.ModelAdmin):
+    list_display = ('tituloInicial', 'subTituloInicial')
 
-                    'primeiraOpcao', 'segundaOpcao', 'terceiraOpcao', 'quartaOpcao', 'quintaOpcao', 'sextaOpcao',
-                    'ultimoBotao',
 
-                    'pontosTitulo', 'primeiroPonto', 'terceiroPonto', 'quintoPonto',
-                    'descrisaoPontos', 'primeiroTitulo', 'primeiraDescrisao', 'primeiroBotao',
-                    'segundoTitulo', 'segundaDescrisao', 'primeiroTopico', 'segundoTopico', 'terceiroTopico', 'segundoBotao',
+@admin.register(BarradeNavegação)
+class BarradeNavegação(admin.ModelAdmin):
+    list_display = ('primeiraOpcao', 'segundaOpcao', 'terceiraOpcao', 'quartaOpcao', 'quintaOpcao', 'sextaOpcao',
+                    'ultimoBotao')
 
-                    'subtituloSuperior', 'tituloQuintaSessao', 'descrisaoPrincipal', 'botaoQuintaSessao',
+
+@admin.register(SegundaSessão)
+class SegundaSessão(admin.ModelAdmin):
+    list_display = ('pontosTitulo', 'primeiroPonto', 'terceiroPonto', 'quintoPonto',
+                    'descrisaoPontos')
+
+
+@admin.register(TerceiraSessão)
+class TerceiraSessão(admin.ModelAdmin):
+    list_display = ('primeiroTitulo', 'primeiraDescrisao', 'primeiroBotao')
+
+
+@admin.register(QuartaSessão)
+class QuartaSessão(admin.ModelAdmin):
+    list_display = ('segundoTitulo', 'segundaDescrisao', 'primeiroTopico', 'segundoTopico', 'terceiroTopico', 'segundoBotao')
+
+
+@admin.register(QuintaSessão)
+class QuintaSessão(admin.ModelAdmin):
+    list_display = ('subtituloSuperior', 'tituloQuintaSessao', 'descrisaoPrincipal', 'botaoQuintaSessao',
                     'primeiraDescrisaoIcone', 'segundaDescrisaoIcone', 'terceiraDescrisaoIcone', 'quartaDescrisaoIcone',
-                    'quintaDescrisaoIcone',
+                    'quintaDescrisaoIcone')
 
-                    'tituloPrincipalSextaSessao', 'primeiroSubtituloSextaSessao', 'primeiraDescrisaoSextaSesssao',
+
+@admin.register(SextaSessão)
+class SextaSessão(admin.ModelAdmin):
+    list_display = ('tituloPrincipalSextaSessao', 'primeiroSubtituloSextaSessao', 'primeiraDescrisaoSextaSesssao',
                     'segundoSubtituloSextaSessao', 'segundaDescrisaoSextaSesssao', 'terceiroSubtituloSextaSessao',
                     'terceiraDescrisaoSextaSesssao', 'quartoSubtituloSextaSessao', 'quartaDescrisaoSextaSesssao',
-                    'botaoSextaSessao',
+                    'botaoSextaSessao')
 
-                    'subtituloSuperiorSetimaSessao', 'tituloPrincipalSetimaSessao', 'primeiroTituloCardSetimaSessao',
-                    'descrisaoPrimeiroCardSetimaSessao', 'segundoTituloCardSetimaSessao', 'descrisaoSegundoCardSetimaSessao',
-                    'terceiroTituloCardSetimaSessao', 'descrisaoterceiroCardSetimaSessao',
 
-                    'subtituloSuperiorOitavaSessao', 'tituloPrincipalOitavaSessao', 'descrisaoOitavaSessao',
-                    'botaoOitavaSessao',
+@admin.register(SetimaSessão)
+class SetimaSessão(admin.ModelAdmin):
+    list_display = ('subtituloSuperiorSetimaSessao', 'tituloPrincipalSetimaSessao', 'primeiroTituloCardSetimaSessao',
+                    'descrisaoPrimeiroCardSetimaSessao', 'segundoTituloCardSetimaSessao',
+                    'descrisaoSegundoCardSetimaSessao',
+                    'terceiroTituloCardSetimaSessao', 'descrisaoterceiroCardSetimaSessao')
 
-                    'enderecoNonaSessao', 'numeroNonaSessao', 'emailNonaSessao',
 
-                    'copyrightRodape', 'nomeRodape',
+@admin.register(OitavaSessão)
+class OitavaSessão(admin.ModelAdmin):
+    list_display = ('subtituloSuperiorOitavaSessao', 'tituloPrincipalOitavaSessao', 'descrisaoOitavaSessao',
+                    'botaoOitavaSessao')
 
-                    'criados', 'modificados', 'ativo')
+
+@admin.register(NonaSessão)
+class NonaSessão(admin.ModelAdmin):
+    list_display = ('enderecoNonaSessao', 'numeroNonaSessao', 'emailNonaSessao')
+
+
+@admin.register(Rodapé)
+class Rodapé(admin.ModelAdmin):
+    list_display = ('copyrightRodape', 'nomeRodape')
+
+# @admin.register(Template)
+# class Template(admin.ModelAdmin):
+#    list_display = (,'criados', 'modificados', 'Ativo')
