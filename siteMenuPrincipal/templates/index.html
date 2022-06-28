@@ -50,7 +50,7 @@
                         <div class="column one">
                             <div class="top_bar_left clearfix">
                                 <div class="logo">
-                                    <a id="logo" href="index.html" title="Minha Logo" data-height="60" data-padding="35"><img class="logo-main scale-with-grid" src="{% static 'content/content/personaltrainer2/images/Abismo-logo.png' %}" data-retina="{% static 'content/content/personaltrainer2/images/retina-Logo-abismo.png' %}" data-height="87" alt="personaltrainer2" data-no-retina><img class="logo-sticky scale-with-grid" src="{% static 'content/content/personaltrainer2/images/Abismo-logo.png' %}" data-retina="{% static 'content/content/personaltrainer2/images/retina-Logo-abismo.png' %}" data-height="87" alt="personaltrainer2" data-no-retina><img class="logo-mobile scale-with-grid" src="{% static 'content/content/personaltrainer2/images/Abismo-logo.png' %}" data-retina="{% static 'content/content/personaltrainer2/images/retina-Logo-abismo.png' %}" data-height="87" alt="personaltrainer2" data-no-retina><img class="logo-mobile-sticky scale-with-grid" src="{% static 'content/content/personaltrainer2/images/Abismo-logo.png' %}" data-retina="{% static 'content/content/personaltrainer2/images/retina-Logo-abismo.png' %}" data-height="87" alt="personaltrainer2" data-no-retina></a>
+                                    <a id="logo" href="index.html" title="Minha Logo" data-height="60" data-padding="35"><img class="logo-main scale-with-grid" src="{{ dados.logoNav.thumbnail.url }}" data-retina="{% static 'content/content/personaltrainer2/images/retina-Logo-abismo.png' %}" data-height="87" alt="personaltrainer2" data-no-retina><img class="logo-sticky scale-with-grid" src="{% static 'content/content/personaltrainer2/images/Abismo-logo.png' %}" data-retina="{% static 'content/content/personaltrainer2/images/retina-Logo-abismo.png' %}" data-height="87" alt="personaltrainer2" data-no-retina><img class="logo-mobile scale-with-grid" src="{% static 'content/content/personaltrainer2/images/Abismo-logo.png' %}" data-retina="{% static 'content/content/personaltrainer2/images/retina-Logo-abismo.png' %}" data-height="87" alt="personaltrainer2" data-no-retina><img class="logo-mobile-sticky scale-with-grid" src="{% static 'content/content/personaltrainer2/images/Abismo-logo.png' %}" data-retina="{% static 'content/content/personaltrainer2/images/retina-Logo-abismo.png' %}" data-height="87" alt="personaltrainer2" data-no-retina></a>
                                 </div>
                                 <div class="menu_wrapper">
 
@@ -95,7 +95,7 @@
                         <rs-module id="rev_slider_1_1" style data-version="6.2.14">
                             <rs-slides>
                                 <rs-slide data-key="rs-1" data-title="Slide" data-anim="ei:d;eo:d;s:1000;r:0;t:fade;sl:0;">
-                                    <img src="{% static 'content/content/personaltrainer2/images/abismo-slider-bg.png' %}" class="rev-slidebg" data-no-retina>
+                                    <img src="{{ dados.imagemFundoPrincipal.thumbnail.url }}" class="rev-slidebg" data-no-retina>
                                     <rs-layer id="slider-1-slide-1-layer-0" data-type="text" data-rsp_ch="on" data-xy="xo:690px,690px,236px,236px;yo:204px,204px,407px,407px;" data-text="w:normal;s:80,80,70,70;l:90,90,80,80;a:right;" data-dim="w:500px;" data-frame_0="x:-50,-50,-31,-31;"
                                         data-frame_1="st:100;sp:1000;sR:100;" data-frame_999="o:0;st:w;sR:7900;" style="z-index:5;font-family:Anton;">
                                         {{dados.tituloInicial}}
@@ -107,10 +107,10 @@
                                         data-text="w:normal;l:50;" data-dim="minh:0px,0px,none,0px;" data-padding="r:40;l:40;" data-border="bor:2px,2px,2px,2px;" data-frame_0="x:-50,-50,-31,-31;" data-frame_1="st:200;sp:1000;sR:200;" data-frame_999="o:0;st:w;sR:7800;"
                                         data-frame_hover="bgc:#e84f13;bor:2px,2px,2px,2px;bri:120%;" style="z-index:7;background-color:#380d36;font-family:Anton;">Saiba mais </a>
                                     <rs-layer id="slider-1-slide-1-layer-3" data-type="image" data-rsp_ch="on" data-xy="y:b;yo:260px,260px,162px,162px;" data-text="w:normal;s:20,20,12,12;l:0,0,15,15;" data-dim="w:405px,405px,253px,253px;h:239px,239px,149px,149px;" data-vbility="t,t,f,t"
-                                        data-frame_0="y:50,50,31,31;" data-frame_1="st:150;sp:1000;sR:150;" data-frame_999="o:0;st:w;sR:7850;" style="z-index:8;border-radius:1rem;"><img src="{% static 'content/content/personaltrainer2/images/Abismo-slider-pic1.png' %}" width="405" height="239" data-no-retina>
+                                        data-frame_0="y:50,50,31,31;" data-frame_1="st:150;sp:1000;sR:150;" data-frame_999="o:0;st:w;sR:7850;" style="z-index:8;border-radius:1rem;"><img src="{{ dados.slider1Principal.thumbnail.url }}" width="405" height="239" data-no-retina>
                                     </rs-layer>
                                     <rs-layer id="slider-1-slide-1-layer-4" data-type="image" data-rsp_ch="on" data-xy="xo:413px,413px,259px,259px;y:b;yo:260px,260px,162px,162px;" data-text="w:normal;s:20,20,12,12;l:0,0,15,15;" data-dim="w:285px,285px,178px,178px;h:240px,240px,150px,150px;"
-                                        data-vbility="t,t,f,t" data-frame_0="y:50,50,31,31;" data-frame_1="st:200;sp:1000;sR:200;" data-frame_999="o:0;st:w;sR:7800;" style="z-index:9; border-radius:1rem;"><img src="{% static 'content/content/personaltrainer2/images/Abismo-slider-pic2.png' %}" width="285" height="240" data-no-retina>
+                                        data-vbility="t,t,f,t" data-frame_0="y:50,50,31,31;" data-frame_1="st:200;sp:1000;sR:200;" data-frame_999="o:0;st:w;sR:7800;" style="z-index:9; border-radius:1rem;"><img src="{{ dados.slider2Principal.thumbnail.url }}" width="285" height="240" data-no-retina>
                                     </rs-layer>
                                 </rs-slide>
                             </rs-slides>
@@ -316,7 +316,7 @@
                                                                                                     <div class="elementor-widget-container">
                                                                                                         <div class="elementor-text-editor elementor-clearfix">
                                                                                                             <p>
-                                                                                                                <span style="color: #6b6b6b;">{{ dados.descrisaoPontos }}
+                                                                                                                <span style="color: #6b6b6b;">{{ dados.descrisaoPontos|safe }}
 
 																														<br>
 																													</span>
@@ -498,7 +498,7 @@
                                                                                                             <h5>{{ dados.subtituloSuperior }}</h5>
                                                                                                             <h2>{{ dados.tituloQuintaSessao }}</h2>
                                                                                                             <p>
-                                                                                                                {{ dados.descrisaoPrincipal }}
+                                                                                                                {{ dados.descrisaoPrincipal|safe }}
                                                                                                             </p>
                                                                                                         </div>
                                                                                                     </div>
@@ -519,7 +519,7 @@
                                                                                                 <div class="elementor-element elementor-element-83ee706 elementor-widget elementor-widget-image" data-id="83ee706" data-element_type="widget" data-widget_type="image.default">
                                                                                                     <div class="elementor-widget-container">
                                                                                                         <div class="elementor-image">
-                                                                                                            <img width="780" height="1020" src="{% static 'content/content/personaltrainer2/images/imagem7camada-pic6.png' %}" class="attachment-large size-large" alt>
+                                                                                                            <img width="780" height="1020" src="{{ dados.imagemDireita.thumbnail.url }}" class="attachment-large size-large" alt>
                                                                                                         </div>
                                                                                                     </div>
                                                                                                 </div>
@@ -548,6 +548,8 @@
                                                                                 </div>
                                                                             </div>
                                                                         </section>
+                                                                        {% endfor %}
+                                                                        {% for dados in iconsQuintaSessão %}
                                                                         <section class="elementor-element elementor-element-11ba375 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-inner-section" data-id="11ba375" data-element_type="section">
                                                                             <div class="elementor-container elementor-column-gap-default">
                                                                                 <div class="elementor-row">
@@ -557,7 +559,7 @@
                                                                                                 <div class="elementor-element elementor-element-cc9db69 elementor-widget elementor-widget-image" data-id="cc9db69" data-element_type="widget" data-widget_type="image.default">
                                                                                                     <div class="elementor-widget-container">
                                                                                                         <div class="elementor-image">
-                                                                                                            <img width="60" height="60" src="{% static 'content/content/personaltrainer2/images/icon-lupa.png' %}" class="attachment-large size-large" alt>
+                                                                                                            <img width="60" height="60" src="{{ dados.icon1.thumbnail.url }}" class="attachment-large size-large" alt>
                                                                                                         </div>
                                                                                                     </div>
                                                                                                 </div>
@@ -573,96 +575,96 @@
                                                                                             </div>
                                                                                         </div>
                                                                                     </div>
-                                                                                    <div class="elementor-element elementor-element-f254e30 elementor-column elementor-col-20 elementor-inner-column" data-id="f254e30" data-element_type="column">
-                                                                                        <div class="elementor-column-wrap  elementor-element-populated">
-                                                                                            <div class="elementor-widget-wrap">
-                                                                                                <div class="elementor-element elementor-element-5b3fdd1 elementor-widget elementor-widget-image" data-id="5b3fdd1" data-element_type="widget" data-widget_type="image.default">
-                                                                                                    <div class="elementor-widget-container">
-                                                                                                        <div class="elementor-image">
-                                                                                                            <img width="60" height="60" src="{% static 'content/content/personaltrainer2/images/icon-floresta.png' %}" class="attachment-large size-large" alt>
-                                                                                                        </div>
-                                                                                                    </div>
-                                                                                                </div>
-                                                                                                <div class="elementor-element elementor-element-1a1b7a8 elementor-widget elementor-widget-text-editor" data-id="1a1b7a8" data-element_type="widget" data-widget_type="text-editor.default">
-                                                                                                    <div class="elementor-widget-container">
-                                                                                                        <div class="elementor-text-editor elementor-clearfix">
-                                                                                                            <p>
-                                                                                                                {{ dados.segundaDescrisaoIcone }}
-                                                                                                            </p>
-                                                                                                        </div>
-                                                                                                    </div>
-                                                                                                </div>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                    <div class="elementor-element elementor-element-b91943e elementor-column elementor-col-20 elementor-inner-column" data-id="b91943e" data-element_type="column">
-                                                                                        <div class="elementor-column-wrap  elementor-element-populated">
-                                                                                            <div class="elementor-widget-wrap">
-                                                                                                <div class="elementor-element elementor-element-5fd8562 elementor-widget elementor-widget-image" data-id="5fd8562" data-element_type="widget" data-widget_type="image.default">
-                                                                                                    <div class="elementor-widget-container">
-                                                                                                        <div class="elementor-image">
-                                                                                                            <img width="60" height="60" src="{% static 'content/content/personaltrainer2/images/icon-livro.png' %}" class="attachment-large size-large" alt>
-                                                                                                        </div>
-                                                                                                    </div>
-                                                                                                </div>
-                                                                                                <div class="elementor-element elementor-element-079adb3 elementor-widget elementor-widget-text-editor" data-id="079adb3" data-element_type="widget" data-widget_type="text-editor.default">
-                                                                                                    <div class="elementor-widget-container">
-                                                                                                        <div class="elementor-text-editor elementor-clearfix">
-                                                                                                            <p>
-                                                                                                                {{ dados.terceiraDescrisaoIcone }}
-                                                                                                            </p>
-                                                                                                        </div>
-                                                                                                    </div>
-                                                                                                </div>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                    <div class="elementor-element elementor-element-2da0188 elementor-column elementor-col-20 elementor-inner-column" data-id="2da0188" data-element_type="column">
-                                                                                        <div class="elementor-column-wrap  elementor-element-populated">
-                                                                                            <div class="elementor-widget-wrap">
-                                                                                                <div class="elementor-element elementor-element-e107b7f elementor-widget elementor-widget-image" data-id="e107b7f" data-element_type="widget" data-widget_type="image.default">
-                                                                                                    <div class="elementor-widget-container">
-                                                                                                        <div class="elementor-image">
-                                                                                                            <img width="60" height="60" src="{% static 'content/content/personaltrainer2/images/icon-asteroide.png' %}" class="attachment-large size-large" alt>
-                                                                                                        </div>
-                                                                                                    </div>
-                                                                                                </div>
-                                                                                                <div class="elementor-element elementor-element-2e84c7e elementor-widget elementor-widget-text-editor" data-id="2e84c7e" data-element_type="widget" data-widget_type="text-editor.default">
-                                                                                                    <div class="elementor-widget-container">
-                                                                                                        <div class="elementor-text-editor elementor-clearfix">
-                                                                                                            <p>
-                                                                                                                {{ dados.quartaDescrisaoIcone }}
-                                                                                                            </p>
-                                                                                                        </div>
-                                                                                                    </div>
-                                                                                                </div>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                    <div class="elementor-element elementor-element-82496b7 elementor-column elementor-col-20 elementor-inner-column" data-id="82496b7" data-element_type="column">
-                                                                                        <div class="elementor-column-wrap  elementor-element-populated">
-                                                                                            <div class="elementor-widget-wrap">
-                                                                                                <div class="elementor-element elementor-element-c6caba1 elementor-widget elementor-widget-image" data-id="c6caba1" data-element_type="widget" data-widget_type="image.default">
-                                                                                                    <div class="elementor-widget-container">
-                                                                                                        <div class="elementor-image">
-                                                                                                            <img width="60" height="60" src="{% static 'content/content/personaltrainer2/images/icon-premio.png' %}" class="attachment-large size-large" alt>
-                                                                                                        </div>
-                                                                                                    </div>
-                                                                                                </div>
-                                                                                                <div class="elementor-element elementor-element-12d62e3 elementor-widget elementor-widget-text-editor" data-id="12d62e3" data-element_type="widget" data-widget_type="text-editor.default">
-                                                                                                    <div class="elementor-widget-container">
-                                                                                                        <div class="elementor-text-editor elementor-clearfix">
-                                                                                                            <p>
-                                                                                                                {{ dados.quintaDescrisaoIcone }}
-                                                                                                            </p>
-                                                                                                        </div>
-                                                                                                    </div>
-                                                                                                </div>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
+<!--                                                                                    <div class="elementor-element elementor-element-f254e30 elementor-column elementor-col-20 elementor-inner-column" data-id="f254e30" data-element_type="column">-->
+<!--                                                                                        <div class="elementor-column-wrap  elementor-element-populated">-->
+<!--                                                                                            <div class="elementor-widget-wrap">-->
+<!--                                                                                                <div class="elementor-element elementor-element-5b3fdd1 elementor-widget elementor-widget-image" data-id="5b3fdd1" data-element_type="widget" data-widget_type="image.default">-->
+<!--                                                                                                    <div class="elementor-widget-container">-->
+<!--                                                                                                        <div class="elementor-image">-->
+<!--                                                                                                            <img width="60" height="60" src="{{ dados.icon2.thumbnail.url }}" class="attachment-large size-large" alt>-->
+<!--                                                                                                        </div>-->
+<!--                                                                                                    </div>-->
+<!--                                                                                                </div>-->
+<!--                                                                                                <div class="elementor-element elementor-element-1a1b7a8 elementor-widget elementor-widget-text-editor" data-id="1a1b7a8" data-element_type="widget" data-widget_type="text-editor.default">-->
+<!--                                                                                                    <div class="elementor-widget-container">-->
+<!--                                                                                                        <div class="elementor-text-editor elementor-clearfix">-->
+<!--                                                                                                            <p>-->
+<!--                                                                                                                {{ dados.segundaDescrisaoIcone }}-->
+<!--                                                                                                            </p>-->
+<!--                                                                                                        </div>-->
+<!--                                                                                                    </div>-->
+<!--                                                                                                </div>-->
+<!--                                                                                            </div>-->
+<!--                                                                                        </div>-->
+<!--                                                                                    </div>-->
+<!--                                                                                    <div class="elementor-element elementor-element-b91943e elementor-column elementor-col-20 elementor-inner-column" data-id="b91943e" data-element_type="column">-->
+<!--                                                                                        <div class="elementor-column-wrap  elementor-element-populated">-->
+<!--                                                                                            <div class="elementor-widget-wrap">-->
+<!--                                                                                                <div class="elementor-element elementor-element-5fd8562 elementor-widget elementor-widget-image" data-id="5fd8562" data-element_type="widget" data-widget_type="image.default">-->
+<!--                                                                                                    <div class="elementor-widget-container">-->
+<!--                                                                                                        <div class="elementor-image">-->
+<!--                                                                                                            <img width="60" height="60" src="{{ dados.icon3.thumbnail.url }}" class="attachment-large size-large" alt>-->
+<!--                                                                                                        </div>-->
+<!--                                                                                                    </div>-->
+<!--                                                                                                </div>-->
+<!--                                                                                                <div class="elementor-element elementor-element-079adb3 elementor-widget elementor-widget-text-editor" data-id="079adb3" data-element_type="widget" data-widget_type="text-editor.default">-->
+<!--                                                                                                    <div class="elementor-widget-container">-->
+<!--                                                                                                        <div class="elementor-text-editor elementor-clearfix">-->
+<!--                                                                                                            <p>-->
+<!--                                                                                                                {{ dados.terceiraDescrisaoIcone }}-->
+<!--                                                                                                            </p>-->
+<!--                                                                                                        </div>-->
+<!--                                                                                                    </div>-->
+<!--                                                                                                </div>-->
+<!--                                                                                            </div>-->
+<!--                                                                                        </div>-->
+<!--                                                                                    </div>-->
+<!--                                                                                    <div class="elementor-element elementor-element-2da0188 elementor-column elementor-col-20 elementor-inner-column" data-id="2da0188" data-element_type="column">-->
+<!--                                                                                        <div class="elementor-column-wrap  elementor-element-populated">-->
+<!--                                                                                            <div class="elementor-widget-wrap">-->
+<!--                                                                                                <div class="elementor-element elementor-element-e107b7f elementor-widget elementor-widget-image" data-id="e107b7f" data-element_type="widget" data-widget_type="image.default">-->
+<!--                                                                                                    <div class="elementor-widget-container">-->
+<!--                                                                                                        <div class="elementor-image">-->
+<!--                                                                                                            <img width="60" height="60" src="{{ dados.icon4.thumbnail.url }}" class="attachment-large size-large" alt>-->
+<!--                                                                                                        </div>-->
+<!--                                                                                                    </div>-->
+<!--                                                                                                </div>-->
+<!--                                                                                                <div class="elementor-element elementor-element-2e84c7e elementor-widget elementor-widget-text-editor" data-id="2e84c7e" data-element_type="widget" data-widget_type="text-editor.default">-->
+<!--                                                                                                    <div class="elementor-widget-container">-->
+<!--                                                                                                        <div class="elementor-text-editor elementor-clearfix">-->
+<!--                                                                                                            <p>-->
+<!--                                                                                                                {{ dados.quartaDescrisaoIcone }}-->
+<!--                                                                                                            </p>-->
+<!--                                                                                                        </div>-->
+<!--                                                                                                    </div>-->
+<!--                                                                                                </div>-->
+<!--                                                                                            </div>-->
+<!--                                                                                        </div>-->
+<!--                                                                                    </div>-->
+<!--                                                                                    <div class="elementor-element elementor-element-82496b7 elementor-column elementor-col-20 elementor-inner-column" data-id="82496b7" data-element_type="column">-->
+<!--                                                                                        <div class="elementor-column-wrap  elementor-element-populated">-->
+<!--                                                                                            <div class="elementor-widget-wrap">-->
+<!--                                                                                                <div class="elementor-element elementor-element-c6caba1 elementor-widget elementor-widget-image" data-id="c6caba1" data-element_type="widget" data-widget_type="image.default">-->
+<!--                                                                                                    <div class="elementor-widget-container">-->
+<!--                                                                                                        <div class="elementor-image">-->
+<!--                                                                                                            <img width="60" height="60" src="{{ dados.icon5.thumbnail.url }}" class="attachment-large size-large" alt>-->
+<!--                                                                                                        </div>-->
+<!--                                                                                                    </div>-->
+<!--                                                                                                </div>-->
+<!--                                                                                                <div class="elementor-element elementor-element-12d62e3 elementor-widget elementor-widget-text-editor" data-id="12d62e3" data-element_type="widget" data-widget_type="text-editor.default">-->
+<!--                                                                                                    <div class="elementor-widget-container">-->
+<!--                                                                                                        <div class="elementor-text-editor elementor-clearfix">-->
+<!--                                                                                                            <p>-->
+<!--                                                                                                                {{ dados.quintaDescrisaoIcone }}-->
+<!--                                                                                                            </p>-->
+<!--                                                                                                        </div>-->
+<!--                                                                                                    </div>-->
+<!--                                                                                                </div>-->
+<!--                                                                                            </div>-->
+<!--                                                                                        </div>-->
+<!--                                                                                    </div>-->
+<!--                                                                                </div>-->
+<!--                                                                            </div>-->
                                                                         </section>
                                                                     </div>
                                                                 </div>
@@ -741,7 +743,7 @@
                                                                                                 <div class="elementor-element elementor-element-3d4aad5 elementor-widget elementor-widget-image" data-id="3d4aad5" data-element_type="widget" data-widget_type="image.default">
                                                                                                     <div class="elementor-widget-container">
                                                                                                         <div class="elementor-image">
-                                                                                                            <img width="590" height="585" style="box-shadow: 11px 11px 11px 9px rgba(0, 0, 0, 0.2);" src="{% static 'content/content/personaltrainer2/images/marine-pic10.png' %}" class="attachment-large size-large" alt>
+                                                                                                            <img width="590" height="585" style="box-shadow: 11px 11px 11px 9px rgba(0, 0, 0, 0.2);" src="{{ dados.imagemPrincipal.thumbnail.url }}" class="attachment-large size-large" alt>
                                                                                                         </div>
                                                                                                     </div>
                                                                                                 </div>
@@ -1035,7 +1037,7 @@
                                                                                                 <div class="elementor-element elementor-element-05f4b21 elementor-widget elementor-widget-image" data-id="05f4b21" data-element_type="widget" data-widget_type="image.default">
                                                                                                     <div class="elementor-widget-container">
                                                                                                         <div class="elementor-image">
-                                                                                                            <img width="780" height="622" style="box-shadow: 14px 14px 14px 12px rgba(0, 0, 0, 0.3);" src="{% static 'content/content/personaltrainer2/images/desenho-rupestre-bruxas-pic9.jpg' %}" class="attachment-large size-large" alt>
+                                                                                                            <img width="780" height="622" style="box-shadow: 14px 14px 14px 12px rgba(0, 0, 0, 0.3);" src="{{ dados.imagemDoVideo.thumbnail.url }}" class="attachment-large size-large" alt>
                                                                                                         </div>
                                                                                                     </div>
                                                                                                 </div>
@@ -1076,7 +1078,7 @@
                                                                                                 <div class="elementor-element elementor-element-fd68fa7 elementor-widget elementor-widget-image" data-id="fd68fa7" data-element_type="widget" data-widget_type="image.default">
                                                                                                     <div class="elementor-widget-container">
                                                                                                         <div class="elementor-image">
-                                                                                                            <img width="187" height="98" src="{% static 'content/content/personaltrainer2/images/Abismo-logo-fotter.png' %}" class="attachment-large size-large" alt>
+                                                                                                            <img width="187" height="98" src="{{ dados.logoInferior.thumbnail.url }}" class="attachment-large size-large" alt>
                                                                                                         </div>
                                                                                                     </div>
                                                                                                 </div>

@@ -4,7 +4,7 @@ from django.views.generic import TemplateView
 from django.views.generic import FormView
 from django.urls import reverse_lazy
 from siteMenuPrincipal.models import ParteInicial, BarradeNavegação, SegundaSessão, TerceiraSessão, QuartaSessão, \
-    QuintaSessão, SextaSessão, SetimaSessão, OitavaSessão, NonaSessão, Rodapé
+    QuintaSessão, SextaSessão, SetimaSessão, OitavaSessão, NonaSessão, Rodapé, iconsQuintaSessão
 
 
 class IndexView(TemplateView):
@@ -18,6 +18,7 @@ class IndexView(TemplateView):
         context['terceiraSessao'] = TerceiraSessão.objects.order_by('-id').all()
         context['quartaSessao'] = QuartaSessão.objects.order_by('-id').all()
         context['quintaSessao'] = QuintaSessão.objects.order_by('-id').all()
+        context['iconsQuintaSessão'] = iconsQuintaSessão.objects.order_by('-id').all()
         context['sextaSessao'] = SextaSessão.objects.order_by('-id').all()
         context['setimaSessao'] = SetimaSessão.objects.order_by('-id').all()
         context['oitavaSessao'] = OitavaSessão.objects.order_by('-id').all()
