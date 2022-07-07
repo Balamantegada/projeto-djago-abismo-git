@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+{% load static %}
+<!--[if lt IE 7]><html class="no-js lt-ie10 lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie10 lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie10 lt-ie9"> <![endif]-->
+<!--[if IE 9]><html class="no-js lt-ie10"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+
+    <!-- Basic Page Needs -->
+    <meta charset="utf-8">
+    <title>Abismo - camadas</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Mobile Specific Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="{% static '/images/images/favicon.ico' %}">
+
+    <!-- FONTS -->
+    <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Roboto+Mono:100,200,300,400,400italic,500,700,700italic,900'>
+    <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Anton:100,200,300,400,400italic,500,700,700italic,900'>
+
+    <!-- CSS -->
+    <link rel='stylesheet' href="{% static 'css/css/global.css' %}">
+    <link rel='stylesheet' href="{% static 'css/css/el_demo.css' %}">
+    <link rel='stylesheet' href="{% static 'content/content/personaltrainer2/css/structure.css' %}">
+    <link rel='stylesheet' href="{% static 'content/content/personaltrainer2/css/personaltrainer2.css' %}">
+    <link rel='stylesheet' href="{% static 'content/content/personaltrainer2/css/custom.css' %}">
+
+
+    <!-- Revolution Slider -->
+    <link rel="stylesheet" href="{% static 'plugins/plugins/rs-plugin-6.custom/css/rs6.css' %}">
+
+
+</head>
+
+<body class="home page-template-default page template-slider  color-custom style-default button-flat layout-full-width one-page no-content-padding header-transparent header-fw minimalist-header-no sticky-header sticky-tb-color ab-hide subheader-both-center menu-link-color menuo-right footer-copy-center mobile-tb-hide mobile-side-slide mobile-mini-mr-ll tablet-sticky mobile-sticky be-reg-2176 elementor-default elementor-kit-14 elementor-page elementor-page-7">
+    <div id="Wrapper">
+        <div id="inicio">
+            <header id="Header">
+                {% for dados in NavBar %}
+                <div id="Top_bar">
+                    <div class="container">
+                        <div class="column one">
+                            <div class="top_bar_left clearfix">
+                                <div class="logo">
+                                    <a id="logo" href="/" title="Minha Logo" data-height="60" data-padding="35"><img class="logo-main scale-with-grid" src="{{ dados.logoNav.thumbnail.url }}" data-retina="{% static 'content/content/personaltrainer2/images/retina-Logo-abismo.png' %}" data-height="87" alt="personaltrainer2" data-no-retina><img class="logo-sticky scale-with-grid" src="{% static 'content/content/personaltrainer2/images/Abismo-logo.png' %}" data-retina="{% static 'content/content/personaltrainer2/images/retina-Logo-abismo.png' %}" data-height="87" alt="personaltrainer2" data-no-retina><img class="logo-mobile scale-with-grid" src="{% static 'content/content/personaltrainer2/images/Abismo-logo.png' %}" data-retina="{% static 'content/content/personaltrainer2/images/retina-Logo-abismo.png' %}" data-height="87" alt="personaltrainer2" data-no-retina><img class="logo-mobile-sticky scale-with-grid" src="{% static 'content/content/personaltrainer2/images/Abismo-logo.png' %}" data-retina="{% static 'content/content/personaltrainer2/images/retina-Logo-abismo.png' %}" data-height="87" alt="personaltrainer2" data-no-retina></a>
+                                </div>
+                                <div class="menu_wrapper">
+
+                                    <nav id="menu">
+                                        <ul id="menu-main-menu" class="menu menu-main">
+                                            <li class="menu-item menu-item-type-custom menu-item-object-custom">
+                                                <a href="#inicio"><span>{{ dados.primeiraOpcao }}</span></a>
+                                            </li>
+                                            <li class="menu-item menu-item-type-custom menu-item-object-custom">
+                                                <a href="/camadas"><span>{{ dados.segundaOpcao }}</span></a>
+                                            </li>
+                                            <li class="menu-item menu-item-type-custom menu-item-object-custom">
+                                                <a href="#7camada"><span>{{ dados.terceiraOpcao }}</span></a>
+                                            </li>
+                                            <li class="menu-item menu-item-type-custom menu-item-object-custom">
+                                                <a href="#marine"><span>{{ dados.quartaOpcao }}</span></a>
+                                            </li>
+                                            <li class="menu-item menu-item-type-custom menu-item-object-custom">
+                                                <a href="#bruxas"><span>{{ dados.quintaOpcao }}</span></a>
+                                            </li>
+                                            <li class="menu-item menu-item-type-custom menu-item-object-custom">
+                                                <a href="#contato"><span>{{ dados.sextaOpcao }}</span></a>
+                                            </li>
+                                        </ul>
+                                    </nav><a class="responsive-menu-toggle" href="#"><i class="icon-menu-fine"></i></a>
+                                </div>
+
+                            </div>
+                            <div class="top_bar_right">
+                                <div class="top_bar_right_wrapper">
+                                    <a href="https://abismo.vercel.app/" class="action_button" target="_blank">{{ dados.ultimoBotao }}</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+                {% for dados in tituloPrincipal %}
+                <div class="mfn-main-slider mfn-rev-slider">
+                    <p class="rs-p-wp-fix"></p>
+                    <rs-module-wrap id="rev_slider_1_1_wrapper" data-source="gallery" style="background:transparent;padding:0;margin:0px auto;margin-top:0;margin-bottom:0;">
+                        <rs-module id="rev_slider_1_1" style data-version="6.2.14">
+                            <rs-slides>
+                                <rs-slide data-key="rs-1" data-title="Slide" data-anim="ei:d;eo:d;s:1000;r:0;t:fade;sl:0;">
+                                    <img src="{{ dados.imagemFundoPrincipal.thumbnail.url }}" class="rev-slidebg" data-no-retina>
+                                    <rs-layer id="slider-1-slide-1-layer-0" data-type="text" data-rsp_ch="on" data-xy="xo:690px,690px,236px,236px;yo:204px,204px,407px,407px;" data-text="w:normal;s:80,80,70,70;l:90,90,80,80;a:right;" data-dim="w:500px;" data-frame_0="x:-50,-50,-31,-31;"
+                                        data-frame_1="st:100;sp:1000;sR:100;" data-frame_999="o:0;st:w;sR:7900;" style="z-index:5;font-family:Anton;">
+                                        {{dados.tituloInicial}}
+                                    </rs-layer>
+                                    <rs-layer id="slider-1-slide-1-layer-1" data-type="text" data-rsp_ch="on" data-xy="xo:816px,816px,511px,511px;yo:519px,519px,325px,325px;" data-text="w:normal;s:17,17,10,10;l:27,27,16,16;a:right;" data-vbility="t,t,f,t" data-frame_0="x:-50,-50,-31,-31;"
+                                        data-frame_1="st:150;sp:1000;sR:150;" data-frame_999="o:0;st:w;sR:7850;" style="z-index:6;font-family:Arial, Helvetica, sans-serif;">
+                                        {{dados.subTituloInicial}}
+                                    </rs-layer><a id="slider-1-slide-1-layer-2" class="rs-layer scroll rev-btn" href="#7camada" target="_self" rel="nofollow" data-type="button" data-rsp_ch="on" data-xy="xo:1024px,1024px,568px,568px;yo:600px,600px,677px,677px;"
+                                        data-text="w:normal;l:50;" data-dim="minh:0px,0px,none,0px;" data-padding="r:40;l:40;" data-border="bor:2px,2px,2px,2px;" data-frame_0="x:-50,-50,-31,-31;" data-frame_1="st:200;sp:1000;sR:200;" data-frame_999="o:0;st:w;sR:7800;"
+                                        data-frame_hover="bgc:#e84f13;bor:2px,2px,2px,2px;bri:120%;" style="z-index:7;background-color:#380d36;font-family:Anton;">Saiba mais </a>
+                                    <rs-layer id="slider-1-slide-1-layer-3" data-type="image" data-rsp_ch="on" data-xy="y:b;yo:260px,260px,162px,162px;" data-text="w:normal;s:20,20,12,12;l:0,0,15,15;" data-dim="w:405px,405px,253px,253px;h:239px,239px,149px,149px;" data-vbility="t,t,f,t"
+                                        data-frame_0="y:50,50,31,31;" data-frame_1="st:150;sp:1000;sR:150;" data-frame_999="o:0;st:w;sR:7850;" style="z-index:8;border-radius:1rem;"><img src="{{ dados.slider1Principal.thumbnail.url }}" width="405" height="239" data-no-retina>
+                                    </rs-layer>
+                                    <rs-layer id="slider-1-slide-1-layer-4" data-type="image" data-rsp_ch="on" data-xy="xo:413px,413px,259px,259px;y:b;yo:260px,260px,162px,162px;" data-text="w:normal;s:20,20,12,12;l:0,0,15,15;" data-dim="w:285px,285px,178px,178px;h:240px,240px,150px,150px;"
+                                        data-vbility="t,t,f,t" data-frame_0="y:50,50,31,31;" data-frame_1="st:200;sp:1000;sR:200;" data-frame_999="o:0;st:w;sR:7800;" style="z-index:9; border-radius:1rem;"><img src="{{ dados.slider2Principal.thumbnail.url }}" width="285" height="240" data-no-retina>
+                                    </rs-layer>
+                                </rs-slide>
+                            </rs-slides>
+                        </rs-module>
+
+                    </rs-module-wrap>
+                </div>
+                {% endfor %}
+            </header>
+        </div>
+        <div id="Content">
+        <section>
+            
+        </section>
+
+            <div class="content_wrapper clearfix">
+                <div class="sections_group">
+                    <div class="entry-content">
+                        <div class="section the_content has_content">
+                        <!--                            Sessão preta-->
+                            <div class="section_wrapper">
+                                <div class="the_content_wrapper">
+                                    <div data-elementor-type="wp-page" data-elementor-id="7" class="elementor elementor-7" data-elementor-settings="[]">
+                                        <div class="elementor-inner">
+                                            <div class="elementor-section-wrap">
+                                                <section class="elementor-element elementor-element-681da3d elementor-section-stretched elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="681da3d" data-element_type="section"
+                                                    id="camadas" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;,&quot;background_background&quot;:&quot;classic&quot;}">
+                                                    <div class="elementor-container elementor-column-gap-wider">
+                                                        <div class="elementor-row">
+                                                            <!--            Zoom Box-->
+                                                             <div class="elementor-column-wrap  elementor-element-populated">
+                                                                <div class="elementor-widget-wrap">
+                                                                    <section class="elementor-element elementor-element-924f958 elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-inner-section" data-id="924f958" data-element_type="section">
+                                                                        <div class="elementor-container elementor-column-gap-default">
+                                                                            <section class="clearfix mfn-item">
+                                                                                <div class="inner-wrapper-big">
+
+                                                                                <div class="column mcb-column mcb-item-0a9ef0829 one-third column_zoom_box">
+                                                                                    <div class="zoom_box">
+                                                                                        <a href="#">
+                                                                                            <div class="photo"><img class="scale-with-grid" src="{% static 'content/content/personaltrainer2/images/camadas/1º camada (1).png' %}" alt="" width="780" height="620" /></div>
+                                                                                            <div class="desc" style="background-color: rgba(61, 45, 46, 0.8);">
+                                                                                                <div class="desc_wrap" style="padding-top: 72px;">
+                                                                                                    <div class="desc_img">
+                                                                                                        <img class="scale-with-grid" src="{% static 'content/content/personaltrainer2/images/camadas/1mapa.png' %}" alt="home_betheme_zoombox_1_icon" width="80" height="80" />
+                                                                                                    </div>
+                                                                                                    <div class="desc_txt">Mauris velit</div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </a>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="column mcb-column mcb-item-ed3b3486a one-third column_zoom_box">
+                                                                                    <div class="zoom_box">
+                                                                                        <a href="#">
+                                                                                            <div class="photo"><img class="scale-with-grid" src="{% static 'content/content/personaltrainer2/images/camadas/1º camada (2).jpg' %}" alt="" width="780" height="620" /></div>
+                                                                                            <div class="desc" style="background-color: rgba(53, 56, 27, 0.8);">
+                                                                                                <div class="desc_wrap" style="padding-top: 72px;">
+                                                                                                    <div class="desc_img">
+                                                                                                        <img class="scale-with-grid" src="{% static 'content/content/personaltrainer2/images/camadas/2casa-unica.png' %}" alt="home_betheme_zoombox_2_icon" width="80" height="80" />
+                                                                                                    </div>
+                                                                                                    <div class="desc_txt">Quisque lorem</div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </a>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="column mcb-column mcb-item-838fe22c8 one-third column_zoom_box">
+                                                                                    <div class="zoom_box">
+                                                                                        <a href="#">
+                                                                                            <div class="photo"><img class="scale-with-grid" src="{% static 'content/content/personaltrainer2/images/camadas/1º camada (3).jpg' %}" alt="" width="780" height="620" /></div>
+                                                                                            <div class="desc" style="background-color: rgba(16, 18, 29, 0.8);">
+                                                                                                <div class="desc_wrap" style="padding-top: 87px;">
+                                                                                                    <div class="desc_img">
+                                                                                                        <img class="scale-with-grid" src="{% static 'content/content/personaltrainer2/images/camadas/3visao.png' %}" alt="home_betheme_zoombox_3_icon" width="80" height="80" />
+                                                                                                    </div>
+                                                                                                    <div class="desc_txt">Aliquam erat </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </a>
+                                                                                    </div>
+                                                                                </div>
+
+                                                                                </div>
+                                                                            </section>
+                                                                        </div>
+                                                                    </section>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </section>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        <!--                            Sessão preta-->
+                        <section>
+                        <div class="elementor-column-wrap  elementor-element-populated">
+                            <div class="elementor-widget-wrap">
+                                <section class="elementor-element elementor-element-924f958 elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-inner-section" data-id="924f958" data-element_type="section">
+                                    <div class="elementor-container elementor-column-gap-default">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur delectus ex in, officiis porro praesentium? Est, nam nemo nobis perspiciatis temporibus vel? Aperiam corporis dolorum
+                                        enim esse inventore maiores natus nobis, nostrum odio omnis pariatur perferendis, repudiandae sapiente tempora, vel veniam voluptatum.</div>
+                                </section>
+                            </div>
+                        </div>
+                        </section>
+                        <!--                            Sessão preta-->
+                            <div class="section_wrapper">
+                                <div class="the_content_wrapper">
+                                    <div data-elementor-type="wp-page" data-elementor-id="7" class="elementor elementor-7" data-elementor-settings="[]">
+                                        <div class="elementor-inner">
+                                            <div class="elementor-section-wrap">
+                                                <section class="elementor-element elementor-element-681da3d elementor-section-stretched elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="681da3d" data-element_type="section"
+                                                    id="camadas" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;,&quot;background_background&quot;:&quot;classic&quot;}">
+                                                    <div class="elementor-container elementor-column-gap-wider">
+                                                        <div class="elementor-row">
+                                                            aASDJJAKS
+                                                        </div>
+                                                    </div>
+                                                </section>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        <!--                            Sessão preta-->
+                        <section>
+                        <div class="elementor-column-wrap  elementor-element-populated">
+                            <div class="elementor-widget-wrap">
+                                <section class="elementor-element elementor-element-924f958 elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-inner-section" data-id="924f958" data-element_type="section">
+                                    <div class="elementor-container elementor-column-gap-default">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur delectus ex in, officiis porro praesentium? Est, nam nemo nobis perspiciatis temporibus vel? Aperiam corporis dolorum
+                                        enim esse inventore maiores natus nobis, nostrum odio omnis pariatur perferendis, repudiandae sapiente tempora, vel veniam voluptatum.</div>
+                                </section>
+                            </div>
+                        </div>
+                        </section>
+                    <!--                            Sessão preta-->
+                            <div class="section_wrapper">
+                                <div class="the_content_wrapper">
+                                    <div data-elementor-type="wp-page" data-elementor-id="7" class="elementor elementor-7" data-elementor-settings="[]">
+                                        <div class="elementor-inner">
+                                            <div class="elementor-section-wrap">
+                                                <section class="elementor-element elementor-element-681da3d elementor-section-stretched elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="681da3d" data-element_type="section"
+                                                    id="camadas" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;,&quot;background_background&quot;:&quot;classic&quot;}">
+                                                    <div class="elementor-container elementor-column-gap-wider">
+                                                        <div class="elementor-row">
+                                                            aASDJJAKS
+                                                        </div>
+                                                    </div>
+                                                </section>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        <!--                            Sessão preta-->
+                        <section>
+                        <div class="elementor-column-wrap  elementor-element-populated">
+                            <div class="elementor-widget-wrap">
+                                <section class="elementor-element elementor-element-924f958 elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-inner-section" data-id="924f958" data-element_type="section">
+                                    <div class="elementor-container elementor-column-gap-default">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur delectus ex in, officiis porro praesentium? Est, nam nemo nobis perspiciatis temporibus vel? Aperiam corporis dolorum
+                                        enim esse inventore maiores natus nobis, nostrum odio omnis pariatur perferendis, repudiandae sapiente tempora, vel veniam voluptatum.</div>
+                                </section>
+                            </div>
+                        </div>
+                        </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+                                                {% for dados in nonaSessao %}
+                                                <section class="elementor-element elementor-element-f6f57a3 elementor-section-stretched elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="f6f57a3" data-element_type="section"
+                                                    id="contato" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;,&quot;background_background&quot;:&quot;classic&quot;}">
+                                                    <div class="elementor-container elementor-column-gap-wider">
+                                                        <div class="elementor-row">
+                                                            <div class="elementor-element elementor-element-bb5c4dc elementor-column elementor-col-100 elementor-top-column" data-id="bb5c4dc" data-element_type="column">
+                                                                <div class="elementor-column-wrap  elementor-element-populated">
+                                                                    <div class="elementor-widget-wrap">
+                                                                        <section class="elementor-element elementor-element-1834d00 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-inner-section" data-id="1834d00" data-element_type="section">
+                                                                            <div class="elementor-container elementor-column-gap-default">
+                                                                                <div class="elementor-row">
+                                                                                    <div class="elementor-element elementor-element-20ecd76 elementor-column elementor-col-100 elementor-inner-column" data-id="20ecd76" data-element_type="column">
+                                                                                        <div class="elementor-column-wrap  elementor-element-populated">
+                                                                                            <div class="elementor-widget-wrap">
+                                                                                                <div class="elementor-element elementor-element-fd68fa7 elementor-widget elementor-widget-image" data-id="fd68fa7" data-element_type="widget" data-widget_type="image.default">
+                                                                                                    <div class="elementor-widget-container">
+                                                                                                        <div class="elementor-image">
+                                                                                                            <img width="187" height="98" src="{{ dados.logoInferior.thumbnail.url }}" class="attachment-large size-large" alt>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                                <div class="elementor-element elementor-element-6f4585e elementor-widget elementor-widget-spacer" data-id="6f4585e" data-element_type="widget" data-widget_type="spacer.default">
+                                                                                                    <div class="elementor-widget-container">
+                                                                                                        <div class="elementor-spacer">
+                                                                                                            <div class="elementor-spacer-inner"></div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </section>
+                                                                        <section class="elementor-element elementor-element-33e8236 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-inner-section" data-id="33e8236" data-element_type="section">
+                                                                            <div class="elementor-container elementor-column-gap-default">
+                                                                                <div class="elementor-row">
+                                                                                    <div class="elementor-element elementor-element-95601cf elementor-column elementor-col-50 elementor-inner-column" data-id="95601cf" data-element_type="column">
+                                                                                        <div class="elementor-column-wrap  elementor-element-populated">
+                                                                                            <div class="elementor-widget-wrap">
+                                                                                                <div class="elementor-element elementor-element-4b6af2e elementor-widget elementor-widget-text-editor" data-id="4b6af2e" data-element_type="widget" data-widget_type="text-editor.default">
+                                                                                                    <div class="elementor-widget-container">
+                                                                                                        <div class="elementor-text-editor elementor-clearfix">
+                                                                                                            <p>
+                                                                                                                {{ dados.enderecoNonaSessao }}
+                                                                                                            </p>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="elementor-element elementor-element-1794e0a elementor-column elementor-col-50 elementor-inner-column" data-id="1794e0a" data-element_type="column">
+                                                                                        <div class="elementor-column-wrap  elementor-element-populated">
+                                                                                            <div class="elementor-widget-wrap">
+                                                                                                <div class="elementor-element elementor-element-eff4cfb elementor-widget elementor-widget-text-editor" data-id="eff4cfb" data-element_type="widget" data-widget_type="text-editor.default">
+                                                                                                    <div class="elementor-widget-container">
+                                                                                                        <div class="elementor-text-editor elementor-clearfix">
+                                                                                                            <p>
+                                                                                                                {{ dados.numeroNonaSessao }}
+                                                                                                                <br>
+                                                                                                                <a href="#">{{ dados.emailNonaSessao }}</a>
+                                                                                                            </p>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </section>
+                                                                        <section class="elementor-element elementor-element-db46993 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-inner-section" data-id="db46993" data-element_type="section">
+                                                                            <div class="elementor-container elementor-column-gap-default">
+                                                                                <div class="elementor-row">
+                                                                                    <div class="elementor-element elementor-element-c4ca20f elementor-column elementor-col-100 elementor-inner-column" data-id="c4ca20f" data-element_type="column">
+                                                                                        <div class="elementor-column-wrap  elementor-element-populated">
+                                                                                            <div class="elementor-widget-wrap">
+                                                                                                <div class="elementor-element elementor-element-d34d5ee elementor-widget elementor-widget-spacer" data-id="d34d5ee" data-element_type="widget" data-widget_type="spacer.default">
+                                                                                                    <div class="elementor-widget-container">
+                                                                                                        <div class="elementor-spacer">
+                                                                                                            <div class="elementor-spacer-inner"></div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                                <div class="elementor-element elementor-element-92d5b30 elementor-widget elementor-widget-text-editor" data-id="92d5b30" data-element_type="widget" data-widget_type="text-editor.default">
+                                                                                                    <div class="elementor-widget-container">
+                                                                                                        <div class="elementor-text-editor elementor-clearfix">
+                                                                                                            <h4>Me mande uma menssagem</h4>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                                <div class="elementor-element elementor-element-e2f26c2 elementor-widget elementor-widget-text-editor" data-id="e2f26c2" data-element_type="widget" data-widget_type="text-editor.default">
+                                                                                                    <div class="elementor-widget-container">
+                                                                                                        <div class="elementor-text-editor elementor-clearfix">
+                                                                                                            <p>
+                                                                                                                <div id="contactWrapper">
+                                                                                                                    <form id="contactform">
+                                                                                                                        <!-- One Second (1/2) Column -->
+                                                                                                                        <div class="column one-second">
+                                                                                                                            <input placeholder="Your name" type="text" name="name" id="name" size="40" aria-required="true" aria-invalid="false" />
+                                                                                                                        </div>
+                                                                                                                        <!-- One Second (1/2) Column -->
+                                                                                                                        <div class="column one-second">
+                                                                                                                            <input placeholder="Your e-mail" type="email" name="email" id="email" size="40" aria-required="true" aria-invalid="false" />
+                                                                                                                        </div>
+                                                                                                                        <div class="column one">
+                                                                                                                            <input placeholder="Subject" type="text" name="subject" id="subject" size="40" aria-invalid="false" />
+                                                                                                                        </div>
+                                                                                                                        <div class="column one">
+                                                                                                                            <textarea placeholder="Message" name="body" id="body" style="width:100%;" rows="10" aria-invalid="false"></textarea>
+                                                                                                                        </div>
+                                                                                                                        <div class="column one">
+                                                                                                                            <input type="button" value="Send A Message" id="submit" onClick="return check_values();">
+                                                                                                                        </div>
+                                                                                                                    </form>
+                                                                                                                </div>
+                                                                                                            </p>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </section>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </section>
+                                                {% endfor %}
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        {% for dados in Rodape %}
+        <footer id="Footer" class="clearfix">
+            <div class="footer_copy">
+                <div class="container">
+                    <div class="column one">
+                        <div class="copyright">
+                            {{ dados.copyrightRodape }}<a target="_blank" rel="nofollow" href="https://1.envato.market/9ZxXY">{{ dados.nomeRodape }}</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        {% endfor %}
+    </div>
+    <div id="Side_slide" class="right dark" data-width="250">
+        <div class="close-wrapper">
+            <a href="#" class="close"><i class="icon-cancel-fine"></i></a>
+        </div>
+        <div class="extras">
+            <a href="https://1.envato.market/9ZxXY" class="action_button" target="_blank">BUY NOW</a>
+            <div class="extras-wrapper"></div>
+        </div>
+        <div class="menu_wrapper"></div>
+    </div>
+    <div id="body_overlay"></div>
+
+    <!-- JS -->
+    <script src="{% static 'js/js/jquery-2.1.4.min.js' %}"></script>
+
+    <script src="{% static 'js/js/mfn.menu.js' %}"></script>
+    <script src="{% static 'js/js/jquery.plugins.js' %}"></script>
+    <script src="{% static 'js/js/jquery.jplayer.min.js' %}"></script>
+    <script src="{% static 'js/js/animations/animations.js' %}"></script>
+    <script src="{% static 'js/js/translate3d.js' %}"></script>
+    <script src="{% static 'js/js/scripts.js' %}"></script>
+    <script src="{% static 'js/js/email.js' %}"></script>
+    <script src="{% static 'js/js/el_demo.js' %}"></script>
+
+    <script src="{% static 'plugins/plugins/rs-plugin-6.custom/js/revolution.tools.min.js' %}"></script>
+    <script src="{% static 'plugins/plugins/rs-plugin-6.custom/js/rs6.min.js' %}"></script>
+
+
+	<script>
+	var revapi1, tpj;
+	jQuery(function() {
+		tpj = jQuery;
+		revapi1 = tpj("#rev_slider_1_1")
+		if (revapi1 == undefined || revapi1.revolution == undefined) {
+			revslider_showDoubleJqueryError("rev_slider_1_1");
+		} else {
+			revapi1.revolution({
+				sliderType :"hero",
+				sliderLayout :"fullwidth",
+				visibilityLevels :"1240,1240,778,778",
+				gridwidth :"1240,1240,778,778",
+				gridheight :"1150,1150,960,960",
+				spinner :"spinner7",
+				perspective : 600,
+				perspectiveType :"global",
+				spinnerclr :"#ff6326",
+				editorheight :"1150,768,960,720",
+				responsiveLevels :"1240,1240,778,778",
+				progressBar : {
+					disableProgressBar : true
+				},
+				navigation : {
+					onHoverStop : false
+				},
+				fallbacks : {
+					allowHTML5AutoPlayOnAndroid : true
+				},
+			});
+		}
+	});
+	</script>
+
+
+</body>
+
+</html>

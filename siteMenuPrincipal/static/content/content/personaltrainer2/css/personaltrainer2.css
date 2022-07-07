@@ -1177,7 +1177,7 @@ body, ul.timeline_items, .icon_box a .desc, .icon_box a:hover .desc, .feature_li
 	color: #ff6326;
 }
 .themebg, #comments .commentlist>li .reply a.comment-reply-link, #Filters .filters_wrapper ul li a:hover, #Filters .filters_wrapper ul li.current-cat a, .fixed-nav .arrow, .offer_thumb .slider_pagination a:before, .offer_thumb .slider_pagination a.selected:after, .pager .pages a:hover, .pager .pages a.active, .pager .pages span.page-numbers.current, .pager-single span:after, .portfolio_group.exposure .portfolio-item .desc-inner .line, .Recent_posts ul li .desc:after, .Recent_posts ul li .photo .c, .slider_pagination a.selected, .slider_pagination .slick-active a, .slider_pagination a.selected:after, .slider_pagination .slick-active a:after, .testimonials_slider .slider_images, .testimonials_slider .slider_images a:after, .testimonials_slider .slider_images:before, #Top_bar a#header_cart span, .widget_categories ul, .widget_mfn_menu ul li a:hover, .widget_mfn_menu ul li.current-menu-item:not(.current-menu-ancestor)>a, .widget_mfn_menu ul li.current_page_item:not(.current_page_ancestor)>a, .widget_product_categories ul, .widget_recent_entries ul li:after, .woocommerce-account table.my_account_orders .order-number a, .woocommerce-MyAccount-navigation ul li.is-active a, .style-simple .accordion .question:after, .style-simple .faq .question:after, .style-simple .icon_box .desc_wrapper .title:before, .style-simple #Filters .filters_wrapper ul li a:after, .style-simple .article_box .desc_wrapper p:after, .style-simple .sliding_box .desc_wrapper:after, .style-simple .trailer_box:hover .desc, .tp-bullets.simplebullets.round .bullet.selected, .tp-bullets.simplebullets.round .bullet.selected:after, .tparrows.default, .tp-bullets.tp-thumbs .bullet.selected:after {
-	background-color: #ff6326;
+	background-color: #4c274a;
 }
 .Latest_news ul li .photo, .Recent_posts.blog_news ul li .photo, .style-simple .opening_hours .opening_hours_wrapper li label, .style-simple .timeline_items li:hover h3, .style-simple .timeline_items li:nth-child(even):hover h3, .style-simple .timeline_items li:hover .desc, .style-simple .timeline_items li:nth-child(even):hover, .style-simple .offer_thumb .slider_pagination a.selected {
 	border-color: #ff6326;
@@ -1287,8 +1287,8 @@ a.mfn-link-6:before {
 	color: #303030;
 }
 hr.hr_color, .hr_color hr, .hr_dots span {
-	color: #ff6326;
-	background: #ff6326;
+	color: #4c274a;
+	background: #4c274a;
 }
 .hr_zigzag i {
 	color: #ff6326;
@@ -1572,7 +1572,7 @@ ul.clients.clients_tiles li .client_wrapper:after {
 	background: #ff6326;
 }
 .ui-tabs .ui-tabs-nav li.ui-state-active a, .accordion .question.active .title>.acc-icon-plus, .accordion .question.active .title>.acc-icon-minus, .faq .question.active .title>.acc-icon-plus, .faq .question.active .title, .accordion .question.active .title {
-	color: #ff6326;
+	color: #911AB6;
 }
 .ui-tabs .ui-tabs-nav li.ui-state-active a:after {
 	background: #ff6326;

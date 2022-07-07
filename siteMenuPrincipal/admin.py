@@ -40,8 +40,7 @@ class QuintaSessão(admin.ModelAdmin):
 
 @admin.register(iconsQuintaSessão)
 class iconsQuintaSessão(admin.ModelAdmin):
-    list_display = ('icon1', 'primeiraDescrisaoIcone', 'icon2', 'segundaDescrisaoIcone', 'icon3', 'terceiraDescrisaoIcone', 'icon4', 'quartaDescrisaoIcone',
-                    'icon5', 'quintaDescrisaoIcone', 'criados', 'modificados', 'ativo')
+    list_display = ('DescrisaoIcone', 'icon', 'criados', 'modificados', 'ativo')
 
 
 @admin.register(SextaSessão)

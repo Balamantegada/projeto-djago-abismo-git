@@ -26,3 +26,16 @@ class IndexView(TemplateView):
         context['Rodape'] = Rodapé.objects.order_by('-id').all()
 
         return context
+
+
+class CamadasViews(TemplateView):
+    template_name = 'camadas.html'
+
+    def get_context_data(self, **kwargs):
+        context = super(CamadasViews, self).get_context_data(**kwargs)
+        context['NavBar'] = BarradeNavegação.objects.order_by('-id').all()
+        context['tituloPrincipal'] = ParteInicial.objects.order_by('-id').all()
+        context['nonaSessao'] = NonaSessão.objects.order_by('-id').all()
+        context['Rodape'] = Rodapé.objects.order_by('-id').all()
+
+        return context

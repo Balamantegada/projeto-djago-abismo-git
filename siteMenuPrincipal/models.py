@@ -107,21 +107,10 @@ class QuintaSessão(Base):
             return self.QuintaSessão
 
 class iconsQuintaSessão(Base):
-    icon1 = StdImageField('Primeiro icone', variations={'thumbnail': {'width': 512, 'height': 512, 'crop': True}},
+    DescrisaoIcone = models.CharField('Descrisão primeiro icone', max_length=250, blank=True)
+    icon = StdImageField('Primeiro icone', variations={'thumbnail': {'width': 512, 'height': 512, 'crop': True}},
                           upload_to='icons', blank=True)
-    primeiraDescrisaoIcone = models.CharField('Descrisão primeiro icone', max_length=250, blank=True)
-    icon2 = StdImageField('Segundo icone', variations={'thumbnail': {'width': 512, 'height': 512, 'crop': True}},
-                          upload_to='icons', blank=True)
-    segundaDescrisaoIcone = models.CharField('Descrisão segundo icone', max_length=250, blank=True)
-    icon3 = StdImageField('Terceiro icone', variations={'thumbnail': {'width': 512, 'height': 512, 'crop': True}},
-                          upload_to='icons', blank=True)
-    terceiraDescrisaoIcone = models.CharField('Descrisão terceiro icone', max_length=250, blank=True)
-    icon4 = StdImageField('Quarto icone', variations={'thumbnail': {'width': 512, 'height': 512, 'crop': True}},
-                          upload_to='icons', blank=True)
-    quartaDescrisaoIcone = models.CharField('Descrisão quarto icone', max_length=250, blank=True)
-    icon5 = StdImageField('Quinto icone', variations={'thumbnail': {'width': 512, 'height': 512, 'crop': True}},
-                          upload_to='icons', blank=True)
-    quintaDescrisaoIcone = models.CharField('Descrisão quinto icone', max_length=250, blank=True)
+
 
 
     class Meta:

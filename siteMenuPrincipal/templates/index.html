@@ -50,7 +50,7 @@
                         <div class="column one">
                             <div class="top_bar_left clearfix">
                                 <div class="logo">
-                                    <a id="logo" href="index.html" title="Minha Logo" data-height="60" data-padding="35"><img class="logo-main scale-with-grid" src="{{ dados.logoNav.thumbnail.url }}" data-retina="{% static 'content/content/personaltrainer2/images/retina-Logo-abismo.png' %}" data-height="87" alt="personaltrainer2" data-no-retina><img class="logo-sticky scale-with-grid" src="{% static 'content/content/personaltrainer2/images/Abismo-logo.png' %}" data-retina="{% static 'content/content/personaltrainer2/images/retina-Logo-abismo.png' %}" data-height="87" alt="personaltrainer2" data-no-retina><img class="logo-mobile scale-with-grid" src="{% static 'content/content/personaltrainer2/images/Abismo-logo.png' %}" data-retina="{% static 'content/content/personaltrainer2/images/retina-Logo-abismo.png' %}" data-height="87" alt="personaltrainer2" data-no-retina><img class="logo-mobile-sticky scale-with-grid" src="{% static 'content/content/personaltrainer2/images/Abismo-logo.png' %}" data-retina="{% static 'content/content/personaltrainer2/images/retina-Logo-abismo.png' %}" data-height="87" alt="personaltrainer2" data-no-retina></a>
+                                    <a id="logo" href="/" title="Minha Logo" data-height="60" data-padding="35"><img class="logo-main scale-with-grid" src="{{ dados.logoNav.thumbnail.url }}" data-retina="{% static 'content/content/personaltrainer2/images/retina-Logo-abismo.png' %}" data-height="87" alt="personaltrainer2" data-no-retina><img class="logo-sticky scale-with-grid" src="{% static 'content/content/personaltrainer2/images/Abismo-logo.png' %}" data-retina="{% static 'content/content/personaltrainer2/images/retina-Logo-abismo.png' %}" data-height="87" alt="personaltrainer2" data-no-retina><img class="logo-mobile scale-with-grid" src="{% static 'content/content/personaltrainer2/images/Abismo-logo.png' %}" data-retina="{% static 'content/content/personaltrainer2/images/retina-Logo-abismo.png' %}" data-height="87" alt="personaltrainer2" data-no-retina><img class="logo-mobile-sticky scale-with-grid" src="{% static 'content/content/personaltrainer2/images/Abismo-logo.png' %}" data-retina="{% static 'content/content/personaltrainer2/images/retina-Logo-abismo.png' %}" data-height="87" alt="personaltrainer2" data-no-retina></a>
                                 </div>
                                 <div class="menu_wrapper">
 
@@ -60,7 +60,7 @@
                                                 <a href="#inicio"><span>{{ dados.primeiraOpcao }}</span></a>
                                             </li>
                                             <li class="menu-item menu-item-type-custom menu-item-object-custom">
-                                                <a href="#camadas"><span>{{ dados.segundaOpcao }}</span></a>
+                                                <a href="/camadas"><span>{{ dados.segundaOpcao }}</span></a>
                                             </li>
                                             <li class="menu-item menu-item-type-custom menu-item-object-custom">
                                                 <a href="#7camada"><span>{{ dados.terceiraOpcao }}</span></a>
@@ -506,7 +506,7 @@
                                                                                                 <div class="elementor-element purple-button elementor-widget elementor-widget-button" data-id="3f5222c" data-element_type="widget" data-widget_type="button.default">
                                                                                                     <div class="elementor-widget-container">
                                                                                                         <div class="elementor-button-wrapper">
-                                                                                                            <a href="#" class="elementor-button-link elementor-button elementor-size-sm" role="button"> <span class="elementor-button-content-wrapper"><span class="elementor-button-text">Entre em contato?</span> </span> </a>
+                                                                                                            <a href="#" class="elementor-button-link elementor-button elementor-size-sm" role="button"> <span class="elementor-button-content-wrapper"><span class="elementor-button-text">{{ dados.botaoQuintaSessao }}</span> </span> </a>
                                                                                                         </div>
                                                                                                     </div>
                                                                                                 </div>
@@ -538,7 +538,9 @@
                                                                                                 <div class="elementor-element elementor-element-5d36000 elementor-widget elementor-widget-spacer" data-id="5d36000" data-element_type="widget" data-widget_type="spacer.default">
                                                                                                     <div class="elementor-widget-container">
                                                                                                         <div class="elementor-spacer">
-                                                                                                            <div class="elementor-spacer-inner"></div>
+                                                                                                            <div class="elementor-spacer-inner">
+
+                                                                                                            </div>
                                                                                                         </div>
                                                                                                     </div>
                                                                                                 </div>
@@ -549,17 +551,18 @@
                                                                             </div>
                                                                         </section>
                                                                         {% endfor %}
-                                                                        {% for dados in iconsQuintaSessão %}
+
                                                                         <section class="elementor-element elementor-element-11ba375 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-inner-section" data-id="11ba375" data-element_type="section">
                                                                             <div class="elementor-container elementor-column-gap-default">
                                                                                 <div class="elementor-row">
+                                                                                    {% for dados in iconsQuintaSessão %}
                                                                                     <div class="elementor-element elementor-element-c000d99 elementor-column elementor-col-20 elementor-inner-column" data-id="c000d99" data-element_type="column">
                                                                                         <div class="elementor-column-wrap  elementor-element-populated">
                                                                                             <div class="elementor-widget-wrap">
                                                                                                 <div class="elementor-element elementor-element-cc9db69 elementor-widget elementor-widget-image" data-id="cc9db69" data-element_type="widget" data-widget_type="image.default">
                                                                                                     <div class="elementor-widget-container">
                                                                                                         <div class="elementor-image">
-                                                                                                            <img width="60" height="60" src="{{ dados.icon1.thumbnail.url }}" class="attachment-large size-large" alt>
+                                                                                                            <img width="60" height="60" src="{{ dados.icon.thumbnail.url }}" class="attachment-large size-large" alt>
                                                                                                         </div>
                                                                                                     </div>
                                                                                                 </div>
@@ -567,7 +570,7 @@
                                                                                                     <div class="elementor-widget-container">
                                                                                                         <div class="elementor-text-editor elementor-clearfix">
                                                                                                             <p>
-                                                                                                                {{ dados.primeiraDescrisaoIcone }}
+                                                                                                                {{ dados.DescrisaoIcone }}
                                                                                                             </p>
                                                                                                         </div>
                                                                                                     </div>
@@ -575,96 +578,9 @@
                                                                                             </div>
                                                                                         </div>
                                                                                     </div>
-<!--                                                                                    <div class="elementor-element elementor-element-f254e30 elementor-column elementor-col-20 elementor-inner-column" data-id="f254e30" data-element_type="column">-->
-<!--                                                                                        <div class="elementor-column-wrap  elementor-element-populated">-->
-<!--                                                                                            <div class="elementor-widget-wrap">-->
-<!--                                                                                                <div class="elementor-element elementor-element-5b3fdd1 elementor-widget elementor-widget-image" data-id="5b3fdd1" data-element_type="widget" data-widget_type="image.default">-->
-<!--                                                                                                    <div class="elementor-widget-container">-->
-<!--                                                                                                        <div class="elementor-image">-->
-<!--                                                                                                            <img width="60" height="60" src="{{ dados.icon2.thumbnail.url }}" class="attachment-large size-large" alt>-->
-<!--                                                                                                        </div>-->
-<!--                                                                                                    </div>-->
-<!--                                                                                                </div>-->
-<!--                                                                                                <div class="elementor-element elementor-element-1a1b7a8 elementor-widget elementor-widget-text-editor" data-id="1a1b7a8" data-element_type="widget" data-widget_type="text-editor.default">-->
-<!--                                                                                                    <div class="elementor-widget-container">-->
-<!--                                                                                                        <div class="elementor-text-editor elementor-clearfix">-->
-<!--                                                                                                            <p>-->
-<!--                                                                                                                {{ dados.segundaDescrisaoIcone }}-->
-<!--                                                                                                            </p>-->
-<!--                                                                                                        </div>-->
-<!--                                                                                                    </div>-->
-<!--                                                                                                </div>-->
-<!--                                                                                            </div>-->
-<!--                                                                                        </div>-->
-<!--                                                                                    </div>-->
-<!--                                                                                    <div class="elementor-element elementor-element-b91943e elementor-column elementor-col-20 elementor-inner-column" data-id="b91943e" data-element_type="column">-->
-<!--                                                                                        <div class="elementor-column-wrap  elementor-element-populated">-->
-<!--                                                                                            <div class="elementor-widget-wrap">-->
-<!--                                                                                                <div class="elementor-element elementor-element-5fd8562 elementor-widget elementor-widget-image" data-id="5fd8562" data-element_type="widget" data-widget_type="image.default">-->
-<!--                                                                                                    <div class="elementor-widget-container">-->
-<!--                                                                                                        <div class="elementor-image">-->
-<!--                                                                                                            <img width="60" height="60" src="{{ dados.icon3.thumbnail.url }}" class="attachment-large size-large" alt>-->
-<!--                                                                                                        </div>-->
-<!--                                                                                                    </div>-->
-<!--                                                                                                </div>-->
-<!--                                                                                                <div class="elementor-element elementor-element-079adb3 elementor-widget elementor-widget-text-editor" data-id="079adb3" data-element_type="widget" data-widget_type="text-editor.default">-->
-<!--                                                                                                    <div class="elementor-widget-container">-->
-<!--                                                                                                        <div class="elementor-text-editor elementor-clearfix">-->
-<!--                                                                                                            <p>-->
-<!--                                                                                                                {{ dados.terceiraDescrisaoIcone }}-->
-<!--                                                                                                            </p>-->
-<!--                                                                                                        </div>-->
-<!--                                                                                                    </div>-->
-<!--                                                                                                </div>-->
-<!--                                                                                            </div>-->
-<!--                                                                                        </div>-->
-<!--                                                                                    </div>-->
-<!--                                                                                    <div class="elementor-element elementor-element-2da0188 elementor-column elementor-col-20 elementor-inner-column" data-id="2da0188" data-element_type="column">-->
-<!--                                                                                        <div class="elementor-column-wrap  elementor-element-populated">-->
-<!--                                                                                            <div class="elementor-widget-wrap">-->
-<!--                                                                                                <div class="elementor-element elementor-element-e107b7f elementor-widget elementor-widget-image" data-id="e107b7f" data-element_type="widget" data-widget_type="image.default">-->
-<!--                                                                                                    <div class="elementor-widget-container">-->
-<!--                                                                                                        <div class="elementor-image">-->
-<!--                                                                                                            <img width="60" height="60" src="{{ dados.icon4.thumbnail.url }}" class="attachment-large size-large" alt>-->
-<!--                                                                                                        </div>-->
-<!--                                                                                                    </div>-->
-<!--                                                                                                </div>-->
-<!--                                                                                                <div class="elementor-element elementor-element-2e84c7e elementor-widget elementor-widget-text-editor" data-id="2e84c7e" data-element_type="widget" data-widget_type="text-editor.default">-->
-<!--                                                                                                    <div class="elementor-widget-container">-->
-<!--                                                                                                        <div class="elementor-text-editor elementor-clearfix">-->
-<!--                                                                                                            <p>-->
-<!--                                                                                                                {{ dados.quartaDescrisaoIcone }}-->
-<!--                                                                                                            </p>-->
-<!--                                                                                                        </div>-->
-<!--                                                                                                    </div>-->
-<!--                                                                                                </div>-->
-<!--                                                                                            </div>-->
-<!--                                                                                        </div>-->
-<!--                                                                                    </div>-->
-<!--                                                                                    <div class="elementor-element elementor-element-82496b7 elementor-column elementor-col-20 elementor-inner-column" data-id="82496b7" data-element_type="column">-->
-<!--                                                                                        <div class="elementor-column-wrap  elementor-element-populated">-->
-<!--                                                                                            <div class="elementor-widget-wrap">-->
-<!--                                                                                                <div class="elementor-element elementor-element-c6caba1 elementor-widget elementor-widget-image" data-id="c6caba1" data-element_type="widget" data-widget_type="image.default">-->
-<!--                                                                                                    <div class="elementor-widget-container">-->
-<!--                                                                                                        <div class="elementor-image">-->
-<!--                                                                                                            <img width="60" height="60" src="{{ dados.icon5.thumbnail.url }}" class="attachment-large size-large" alt>-->
-<!--                                                                                                        </div>-->
-<!--                                                                                                    </div>-->
-<!--                                                                                                </div>-->
-<!--                                                                                                <div class="elementor-element elementor-element-12d62e3 elementor-widget elementor-widget-text-editor" data-id="12d62e3" data-element_type="widget" data-widget_type="text-editor.default">-->
-<!--                                                                                                    <div class="elementor-widget-container">-->
-<!--                                                                                                        <div class="elementor-text-editor elementor-clearfix">-->
-<!--                                                                                                            <p>-->
-<!--                                                                                                                {{ dados.quintaDescrisaoIcone }}-->
-<!--                                                                                                            </p>-->
-<!--                                                                                                        </div>-->
-<!--                                                                                                    </div>-->
-<!--                                                                                                </div>-->
-<!--                                                                                            </div>-->
-<!--                                                                                        </div>-->
-<!--                                                                                    </div>-->
-<!--                                                                                </div>-->
-<!--                                                                            </div>-->
+                                                                                    {% endfor %}
+                                                                                </div>
+                                                                            </div>
                                                                         </section>
                                                                     </div>
                                                                 </div>
@@ -672,7 +588,7 @@
                                                         </div>
                                                     </div>
                                                 </section>
-                                                {% endfor %}
+
                                                 {% for dados in sextaSessao %}
                                                 <section class="elementor-element elementor-element-bf6132c elementor-section-stretched elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="bf6132c" data-element_type="section"
                                                     id="marine" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;,&quot;background_background&quot;:&quot;classic&quot;}">
@@ -1024,7 +940,25 @@
                                                                                                 <div class="elementor-element purple-button elementor-widget elementor-widget-button" data-id="29b5b9d" data-element_type="widget" data-widget_type="button.default">
                                                                                                     <div class="elementor-widget-container">
                                                                                                         <div class="elementor-button-wrapper">
-                                                                                                            <a href="#" class="elementor-button-link elementor-button elementor-size-sm" role="button"> <span class="elementor-button-content-wrapper"> <span class="elementor-button-text">{{ dados.botaoOitavaSessao }}</span> </span> </a>
+                                                                                                            <div class="column mcb-column mcb-item-mkdqq0pmi one column_column center button-default" style="margin-bottom: 20px;">
+                                                                                                                <div class="column_attr clearfix" style="">
+
+                                                                                                                    <a class="button button_size_2 button_theme" href="#popup-6107f1b7508e2" rel="prettyphoto" data-type="inline" class="popup-link"><span class="button_label">{{ dados.botaoOitavaSessao }}</span></a>
+
+                                                                                                                    <div id="popup-6107f1b7508e2" class="popup-content">
+                                                                                                                        <div class="popup-inner" style="padding:20px;">
+                                                                                                                            <div style="text-align: center;">
+                                                                                                                                <div class="video-player">
+                                                                                                                                    <video width="100%" controls autoplay>
+                                                                                                                                        <source src="{% static 'content/content/personaltrainer2/media/video.mp4' %}" type="video/mp4">
+                                                                                                                                    </video>
+                                                                                                                                </div>
+                                                                                                                            </div>
+                                                                                                                        </div>
+                                                                                                                    </div>
+
+                                                                                                                </div>
+                                                                                                            </div>
                                                                                                         </div>
                                                                                                     </div>
                                                                                                 </div>
@@ -1056,8 +990,331 @@
                                                                         </section>
                                                                     </div>
                                                                 </div>
+
                                                             </div>
+
                                                         </div>
+
+                                                    </div>
+<!--                                                    acoordeon-->
+                                                    <div class="elementor-column-wrap  elementor-element-populated">
+                                                            <div class="elementor-widget-wrap">
+                                                                <section class="elementor-element elementor-element-924f958 elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-inner-section" data-id="924f958" data-element_type="section">
+                                                                    <div class="elementor-container elementor-column-gap-default">
+                                                                        <div class="column mcb-column one column_accordion">
+                                                                            <div class="accordion">
+                                                                                <div class="mfn-acc accordion_wrapper open1st">
+                                                                                    <div class="question active">
+                                                                                        <div class="title"><i class="icon-plus acc-icon-plus"></i><i class="icon-minus acc-icon-minus"></i><i class="icon-cog"></i>&nbsp;&nbsp;Sed est elit posuere ac semper hendrerit neque</div>
+                                                                                        <div class="answer" style="display: block;">
+                                                                                            <p><big>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce velit tortor, dictum in gravida nec, aliquet non lorem. </big></p>
+                                                                                            <p>
+                                                                                                Donec vestibulum justo a diam ultricies pellentesque. Quisque mattis diam vel lacus tincidunt elementum. Sed vitae adipiscing turpis. Aenean ligula nibh, molestie id viverra a, dapibus at dolor. In iaculis viverra
+                                                                                                neque, ac eleifend ante lobortis id. In viverra ipsum ac eros tristique dignissim. Donec aliquam velit vitae mi dictum.
+                                                                                            </p>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="question">
+                                                                                        <div class="title"><i class="icon-plus acc-icon-plus"></i><i class="icon-minus acc-icon-minus"></i><i class="icon-star"></i>&nbsp;&nbsp;Aenean ligula nibh, molestie id viverra a</div>
+                                                                                        <div class="answer" style="display: none;">
+                                                                                            <p><big>Curabitur et ligula. Ut molestie a, ultricies porta urna. Vestibulum commodo volutpat a, convallis ac, laoreet enim. Phasellus fermentum in, dolor.</big></p>
+                                                                                            <p>
+                                                                                                Donec vestibulum justo a diam ultricies pellentesque. Quisque mattis diam vel lacus tincidunt elementum. Sed vitae adipiscing turpis. Aenean ligula nibh, molestie id viverra a, dapibus at dolor. In iaculis viverra
+                                                                                                neque, ac eleifend ante lobortis id.
+                                                                                            </p>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="question">
+                                                                                        <div class="title"><i class="icon-plus acc-icon-plus"></i><i class="icon-minus acc-icon-minus"></i><i class="icon-users"></i>&nbsp;&nbsp;Morbi sed dolor risus rhoncus sapien</div>
+                                                                                        <div class="answer" style="display: none;">
+                                                                                            <p><big>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce velit tortor, dictum in gravida nec, aliquet non lorem. </big></p>
+                                                                                            <p>
+                                                                                                Donec vestibulum justo a diam ultricies pellentesque. Quisque mattis diam vel lacus tincidunt elementum. Sed vitae adipiscing turpis. Aenean ligula nibh, molestie id viverra a, dapibus at dolor. In iaculis viverra
+                                                                                                neque, ac eleifend ante lobortis id. In viverra ipsum ac eros tristique dignissim. Donec aliquam velit vitae mi dictum.
+                                                                                            </p>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </section>
+                                                            </div>
+                                                    </div>
+<!--                                                    Photo box-->
+                                                    <div class="elementor-column-wrap  elementor-element-populated">
+                                                            <div class="elementor-widget-wrap">
+                                                                <section class="elementor-element elementor-element-924f958 elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-inner-section" data-id="924f958" data-element_type="section">
+                                                                    <div class="elementor-container elementor-column-gap-default">
+                                                                        <div class="inner-wrapper-big">
+                                                                            <div class="column mcb-column mcb-item-4d26bc779 one-third column_photo_box">
+                                                                                <div class="photo_box">
+                                                                                    <h4>Angel</h4>
+                                                                                    <div class="image_frame">
+                                                                                        <div class="image_wrapper">
+                                                                                            <a href="#">
+                                                                                                <div class="mask"></div>
+                                                                                                <img class="scale-with-grid" src="{% static 'content/content/personaltrainer2/images/angel.jpg' %}" alt="" width="780" height="455" />
+                                                                                            </a>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="desc">Vitae adipiscing turpis. Aenean ligula nibh in, molestie id viverra a, dapibus at dolor.</div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="column mcb-column mcb-item-988c4221e one-third column_photo_box">
+                                                                                <div class="photo_box">
+                                                                                    <h4>Vladimir</h4>
+                                                                                    <div class="image_frame">
+                                                                                        <div class="image_wrapper">
+                                                                                            <a href="#">
+                                                                                                <div class="mask"></div>
+                                                                                                <img class="scale-with-grid" src="{% static 'content/content/personaltrainer2/images/vlad.jpg' %}" alt="" width="780" height="455" />
+                                                                                            </a>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="desc">Vitae adipiscing turpis. Aenean ligula nibh in, molestie id viverra a, dapibus at dolor.</div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="column mcb-column mcb-item-183735711 one-third column_photo_box">
+                                                                                <div class="photo_box">
+                                                                                    <h4>Flora</h4>
+                                                                                    <div class="image_frame">
+                                                                                        <div class="image_wrapper">
+                                                                                            <a href="#">
+                                                                                                <div class="mask"></div>
+                                                                                                <img class="scale-with-grid" src="{% static 'content/content/personaltrainer2/images/dragão da natureza.jpg' %}" alt="" width="780" height="455" />
+                                                                                            </a>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="desc">Vitae adipiscing turpis. Aenean ligula nibh in, molestie id viverra a, dapibus at dolor.</div>
+                                                                                </div>
+                                                                            </div>
+
+                                                                        </div>
+                                                                    </div>
+                                                                </section>
+                                                            </div>
+                                                    </div>
+                                                    <!--                                                    map-->
+                                                    <div class="elementor-column-wrap  elementor-element-populated">
+                                                            <div class="elementor-widget-wrap">
+                                                                <section class="elementor-element elementor-element-924f958 elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-inner-section" data-id="924f958" data-element_type="section">
+                                                                    <div class="">
+                                                                        <section class="clearfix mfn-item">
+                                                                            <div class="inner-wrapper-big">
+
+                                                                              <iframe src="https://maps.google.com/maps?q=Hamburger%20Kunsthalle&t=k&z=11&ie=UTF8&iwloc=&output=embed" width="1080" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+                                                                            </div>
+                                                                        </section>
+                                                                    </div>
+                                                                </section>
+                                                            </div>
+                                                    </div>
+<!--                                                    Testimonials-->
+                                                    <div class="elementor-column-wrap  elementor-element-populated">
+                                                            <div class="elementor-widget-wrap">
+                                                                <section class="elementor-element elementor-element-924f958 elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-inner-section" data-id="924f958" data-element_type="section">
+
+                                                                        <section class="clearfix mfn-item">
+                                                                            <div class="inner-wrapper-big button-default">
+
+                                                                                <div class="column mcb-column one column_testimonials">
+                                                                                    <div class="testimonials_slider">
+                                                                                        <div class="slider_pager slider_images"></div>
+                                                                                        <ul class="testimonials_slider_ul">
+                                                                                            <li>
+                                                                                                <div class="single-photo-img">
+                                                                                                    <img
+                                                                                                        src="{% static 'content/content/personaltrainer2/images/angel Testimonials.jpg' %}"
+                                                                                                        class="scale-with-grid wp-post-image"
+                                                                                                        alt=""
+                                                                                                        width="85"
+                                                                                                        height="85"
+                                                                                                        />
+                                                                                                </div>
+                                                                                                <div class="bq_wrapper">
+                                                                                                    <blockquote>
+                                                                                                        Aliquam erat ac ipsum. Integer aliquam purus. Quisque lorem tortor fringilla sed, vestibulum id, eleifend justo vel bibendum sapien massa ac turpis faucibus orci luctus non, consectetuer lobortis quis, varius
+                                                                                                        in, purus. Integer ultrices posuere cubilia.
+                                                                                                    </blockquote>
+                                                                                                </div>
+                                                                                                <div class="hr_dots"><span></span><span></span><span></span></div>
+                                                                                                <div class="author">
+                                                                                                    <h5><a target="_blank" href="#" tabindex="-1">Angel / Maria Richi</a></h5>
+                                                                                                    <span class="company">Amor e paz</span>
+                                                                                                </div>
+                                                                                            </li>
+                                                                                            <li>
+                                                                                                <div class="single-photo-img">
+                                                                                                    <img
+                                                                                                        src="{% static 'content/content/personaltrainer2/images/Vlad Testimonials.jpg' %}"
+                                                                                                        class="scale-with-grid wp-post-image"
+                                                                                                        alt=""
+                                                                                                        width="85"
+                                                                                                        height="85"
+                                                                                                        />
+                                                                                                </div>
+                                                                                                <div class="bq_wrapper">
+                                                                                                    <blockquote>
+                                                                                                        Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula. Ut molestie a, ultricies porta
+                                                                                                        urna.
+                                                                                                    </blockquote>
+                                                                                                </div>
+                                                                                                <div class="hr_dots"><span></span><span></span><span></span></div>
+                                                                                                <div class="author">
+                                                                                                    <h5><a target="_blank" href="#" tabindex="0">Vladimir</a></h5>
+                                                                                                    <span class="company">Raiva</span>
+                                                                                                </div>
+                                                                                            </li>
+                                                                                            <li>
+                                                                                                <div class="single-photo-img">
+                                                                                                    <img
+                                                                                                        src="{% static 'content/content/personaltrainer2/images/dragão da natureza Testimonials.jpg' %}"
+                                                                                                        class="scale-with-grid wp-post-image"
+                                                                                                        alt=""
+                                                                                                        width="85"
+                                                                                                        height="85"
+                                                                                                        />
+                                                                                                </div>
+                                                                                                <div class="bq_wrapper">
+                                                                                                    <blockquote>Ut et iaculis ante, vel scelerisque tortor. Nulla dignissim, tellus sed aliquam ullamcorper, erat sem feugiat est, vitae dictum mi enim nec lectus.</blockquote>
+                                                                                                </div>
+                                                                                                <div class="hr_dots"><span></span><span></span><span></span></div>
+                                                                                                <div class="author">
+                                                                                                    <h5><a target="_blank" href="#" tabindex="-1">Flora</a></h5>
+                                                                                                    <span class="company">Natureza, noite, mar e céu</span>
+                                                                                                </div>
+                                                                                            </li>
+                                                                                            <li>
+                                                                                                <div class="single-photo-img">
+                                                                                                    <img
+                                                                                                        src="{% static 'content/content/personaltrainer2/images/Neni Testimonials.jpg' %}"
+                                                                                                        class="scale-with-grid wp-post-image"
+                                                                                                        alt=""
+                                                                                                        width="85"
+                                                                                                        height="85"
+                                                                                                        />
+                                                                                                </div>
+                                                                                                <div class="bq_wrapper">
+                                                                                                    <blockquote>
+                                                                                                        Vestibulum commodo volutpat a, convallis ac, laoreet enim. Phasellus fermentum in, dolor. Pellentesque facilisis. Nulla imperdiet sit amet magna. Vestibulum dapibus, mauris nec malesuada fames ac turpis
+                                                                                                        velit, rhoncus eu, luctus.
+                                                                                                    </blockquote>
+                                                                                                </div>
+                                                                                                <div class="hr_dots"><span></span><span></span><span></span></div>
+                                                                                                <div class="author">
+                                                                                                    <h5><a target="_blank" href="#" tabindex="-1">Neni</a></h5>
+                                                                                                    <span class="company">Preguiça</span>
+                                                                                                </div>
+                                                                                            </li>
+                                                                                        </ul>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="column mcb-column one column_testimonials" style="margin-top: 40px">
+                                                                                    <div class="testimonials_slider single-photo">
+                                                                                        <ul class="testimonials_slider_ul">
+                                                                                            <li>
+                                                                                                <div class="single-photo-img">
+                                                                                                    <img
+                                                                                                        src="{% static 'content/content/personaltrainer2/images/angel Testimonials.jpg' %}"
+                                                                                                        class="scale-with-grid wp-post-image"
+                                                                                                        alt=""
+                                                                                                        width="85"
+                                                                                                        height="85"
+                                                                                                        />
+                                                                                                </div>
+                                                                                                <div class="bq_wrapper">
+                                                                                                    <blockquote>
+                                                                                                        Aliquam erat ac ipsum. Integer aliquam purus. Quisque lorem tortor fringilla sed, vestibulum id, eleifend justo vel bibendum sapien massa ac turpis faucibus orci luctus non, consectetuer lobortis quis, varius
+                                                                                                        in, purus. Integer ultrices posuere cubilia.
+                                                                                                    </blockquote>
+                                                                                                </div>
+                                                                                                <div class="hr_dots"><span></span><span></span><span></span></div>
+                                                                                                <div class="author">
+                                                                                                    <h5><a target="_blank" href="#" tabindex="-1">Gordon Dale</a></h5>
+                                                                                                    <span class="company">Muffin Group</span>
+                                                                                                </div>
+                                                                                            </li>
+                                                                                            <li>
+                                                                                                <div class="single-photo-img">
+                                                                                                    <img
+                                                                                                        src="{% static 'content/content/personaltrainer2/images/Vlad Testimonials.jpg' %}"
+                                                                                                        class="scale-with-grid wp-post-image"
+                                                                                                        alt=""
+                                                                                                        width="85"
+                                                                                                        height="85"
+                                                                                                        />
+                                                                                                </div>
+                                                                                                <div class="bq_wrapper">
+                                                                                                    <blockquote>
+                                                                                                        Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula. Ut molestie a, ultricies porta
+                                                                                                        urna.
+                                                                                                    </blockquote>
+                                                                                                </div>
+                                                                                                <div class="hr_dots"><span></span><span></span><span></span></div>
+                                                                                                <div class="author">
+                                                                                                    <h5><a target="_blank" href="#" tabindex="0">Tom Johnson</a></h5>
+                                                                                                    <span class="company">CodeCanyon</span>
+                                                                                                </div>
+                                                                                            </li>
+                                                                                            <li>
+                                                                                                <div class="single-photo-img">
+                                                                                                    <img
+                                                                                                        src="{% static 'content/content/personaltrainer2/images/dragão da natureza Testimonials.jpg' %}"
+                                                                                                        class="scale-with-grid wp-post-image"
+                                                                                                        alt=""
+                                                                                                        width="85"
+                                                                                                        height="85"
+                                                                                                        />
+                                                                                                </div>
+                                                                                                <div class="bq_wrapper">
+                                                                                                    <blockquote>Ut et iaculis ante, vel scelerisque tortor. Nulla dignissim, tellus sed aliquam ullamcorper, erat sem feugiat est, vitae dictum mi enim nec lectus.</blockquote>
+                                                                                                </div>
+                                                                                                <div class="hr_dots"><span></span><span></span><span></span></div>
+                                                                                                <div class="author">
+                                                                                                    <h5><a target="_blank" href="#" tabindex="-1">John Doe</a></h5>
+                                                                                                    <span class="company">Muffin Group</span>
+                                                                                                </div>
+                                                                                            </li>
+                                                                                            <li>
+                                                                                                <div class="single-photo-img">
+                                                                                                    <img
+                                                                                                        src="{% static 'content/content/personaltrainer2/images/Neni Testimonials.jpg' %}"
+                                                                                                        class="scale-with-grid wp-post-image"
+                                                                                                        alt=""
+                                                                                                        width="85"
+                                                                                                        height="85"
+                                                                                                        />
+                                                                                                </div>
+                                                                                                <div class="bq_wrapper">
+                                                                                                    <blockquote>
+                                                                                                        Vestibulum commodo volutpat a, convallis ac, laoreet enim. Phasellus fermentum in, dolor. Pellentesque facilisis. Nulla imperdiet sit amet magna. Vestibulum dapibus, mauris nec malesuada fames ac turpis
+                                                                                                        velit, rhoncus eu, luctus.
+                                                                                                    </blockquote>
+                                                                                                </div>
+                                                                                                <div class="hr_dots"><span></span><span></span><span></span></div>
+                                                                                                <div class="author">
+                                                                                                    <h5><a target="_blank" href="#" tabindex="-1">Joan Avina</a></h5>
+                                                                                                    <span class="company">Themeforest</span>
+                                                                                                </div>
+                                                                                            </li>
+                                                                                        </ul>
+                                                                                        <div class="slider_pager slider_pagination"></div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </section>
+                                                                </section>
+                                                            </div>
+                                                    </div>
+                                                    <div class="elementor-column-wrap  elementor-element-populated">
+                                                            <div class="elementor-widget-wrap">
+                                                                <section class="elementor-element elementor-element-924f958 elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-inner-section" data-id="924f958" data-element_type="section">
+                                                                    <div class="elementor-container elementor-column-gap-default">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur delectus ex in, officiis porro praesentium? Est, nam nemo nobis perspiciatis temporibus vel? Aperiam corporis dolorum
+                                                                        enim esse inventore maiores natus nobis, nostrum odio omnis pariatur perferendis, repudiandae sapiente tempora, vel veniam voluptatum.</div>
+                                                                </section>
+                                                            </div>
                                                     </div>
                                                 </section>
                                                 {% endfor %}
